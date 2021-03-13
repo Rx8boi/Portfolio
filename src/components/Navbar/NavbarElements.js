@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
+import { Link as LinkS } from "react-scroll";
 
 
 
@@ -16,7 +17,7 @@ top: 0;
 z-index: 10;
 
 
-@media screen and(max - width: 960px) {
+@media screen and(max-width: 960px) {
     transition: 0.8s all escape;
 }
 `
@@ -56,4 +57,34 @@ export const MobileIcon = styled.div`
         cursor: pointer;
     }
 `
+export const NavMenu = styled.ul`
+display: flex;
+align-items: center;
+list-style: none;
+text-align: center;
+margin-right: -22px;
 
+@media screen and (max-width: 768px) {
+    display: none;
+}
+`
+
+export const NavItem = styled.li`
+height: 80px;
+`
+
+
+export const NavLinks = styled(LinkS)`
+color: #fff;
+display: flex;
+align-items: center;
+text-decoration: none;
+padding: 0 1rem;
+height: 100%;
+cursor: pointer;
+
+//hover underline of active navitem
+&.active {
+    border-bottom: 3px solid #01bf71;
+}
+`
