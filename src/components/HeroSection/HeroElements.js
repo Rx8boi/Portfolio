@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
 
 export const HeroContainer = styled.div`
     background: black;
@@ -25,8 +25,29 @@ overflow: hidden;
 `
 
 export const VideoBg = styled.video`
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    background: black;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  background: black;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const HeroBtnWrapper = styled.div`
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     `
+
+export const ArrowForward = styled(MdArrowForward)`
+    margin-left: 8px;
+    font-size: 20px;
+    `
+
+    export const ArrowRight = styled(MdKeyboardArrowRight)`
+      margin-left: 8px;
+      font-size: 20px;
+    `;

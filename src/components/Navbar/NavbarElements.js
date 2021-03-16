@@ -113,7 +113,7 @@ export const NavBtnLink = styled(LinkR)`
   height: 45px;
   position: relative;
   /* top: 17px; */
-  /* right: 16px; */
+  right: 16px;
 
   &:hover {
     transition: all 0.5s ease-in-out;
