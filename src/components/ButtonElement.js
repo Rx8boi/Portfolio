@@ -25,8 +25,14 @@ export const Button = styled(Link)`
     color: ${({ dark }) => (dark ? "#f2f2f2" : "black")};
   }
 
+  @media screen and (max-width: 600px) {
+    margin-top: 10px;
+    color: blue;
+    bottom: -190px;
+  }
+
   @media screen and (max-width: 768px) {
     margin-top: 10px;
-    bottom: -190px;
+    bottom: -270px;
   }
 `;

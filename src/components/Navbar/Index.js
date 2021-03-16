@@ -9,8 +9,10 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
+  FileDownload
 } from "./NavbarElements";
 import { FaBars } from "react-icons/fa";
+
 
 const Navbar = ({ toggle }) => {
   return (
@@ -36,7 +38,9 @@ const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/Projects">Projects</NavBtnLink>
+            <NavBtnLink to="../../../public/Charles2021.pdf" target="_blank" download>
+              <FileDownload /> Resume
+            </NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
+import { MdFileDownload } from "react-icons/md";
+
 
 export const Nav = styled.nav`
   background: #000;
@@ -124,4 +126,9 @@ export const NavBtnLink = styled(LinkR)`
   @media screen and (max-width: 768px) {
     display: none;
   }
+`;
+
+export const FileDownload = styled(MdFileDownload)`
+  margin-left: 8px;
+  font-size: 20px;
 `;
