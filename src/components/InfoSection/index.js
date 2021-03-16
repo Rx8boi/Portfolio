@@ -11,23 +11,19 @@ const InfoSection = () => {
           <InfoRow>
             <Column1>
               <TextWrapper>
-                <TopLine>
-                  About
-                  <Heading>
-                    Hi I'm Charles
-                    <Subtitle>
-                      <BtnWrap>
-                        <Button to="home">Button</Button>
-                      </BtnWrap>
-                    </Subtitle>
-                  </Heading>
-                </TopLine>
+                <TopLine>About</TopLine>
+                <Heading>Hi I'm Charles </Heading>
+                <Subtitle> Stuff about Charles </Subtitle>
+                <BtnWrap>
+                  <Button to="home">Button</Button>
+                </BtnWrap>
               </TextWrapper>
-                      </Column1>
-                      <Column2>
-                          <ImgWrap>
-                              <Img />
-                          </ImgWrap></Column2>
+            </Column1>
+            <Column2>
+              <ImgWrap>
+                <Img />
+              </ImgWrap>
+            </Column2>
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>
