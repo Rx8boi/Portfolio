@@ -3,19 +3,29 @@ import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, Sidebar
 
 
 
-const Sidebar = () => {
+const Sidebar = ({isOpen, toggle}) => {
     return (
-      <SidebarContainer>
-        <Icon>
+      <SidebarContainer isOpen={isOpen} onClick={toggle}>
+        <Icon onClick={toggle}>
           <CloseIcon />
         </Icon>
         <SidebarWrapper>
           <SidebarMenu>
-            <SidebarLink to="/">Intro</SidebarLink>
-            <SidebarLink to="about">About</SidebarLink>
-            <SidebarLink to="TimeLine">TimeLine</SidebarLink>
-            <SidebarLink to="Resume">Resume</SidebarLink>
-            <SidebarLink to="Contact">Contact</SidebarLink>
+            <SidebarLink to="/" onClick={toggle}>
+              Intro
+            </SidebarLink>
+            <SidebarLink to="about" onClick={toggle}>
+              About
+            </SidebarLink>
+            <SidebarLink to="TimeLine" onClick={toggle}>
+              TimeLine
+            </SidebarLink>
+            <SidebarLink to="Resume" onClick={toggle}>
+              Resume
+            </SidebarLink>
+            <SidebarLink to="Contact" onClick={toggle}>
+              Contact
+            </SidebarLink>
           </SidebarMenu>
           <SideBtnWrap>
             <SidebarRoute to="/projects">Projects</SidebarRoute>
