@@ -38,8 +38,8 @@ const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="../../../public/Charles2021.pdf" target="_blank" download>
-              <FileDownload /> Resume
+            <NavBtnLink to= "../../../public/Charles2021.pdf" target="_blank" download>
+              <FileDownload /> Resume Download
             </NavBtnLink>
           </NavBtn>
         </NavbarContainer>

@@ -102,17 +102,17 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
-  background: #01bf71;
+  background: black;
   white-space: nowrap;
-  padding: 13px 22px;
-  color: #010606;
+  padding: 6px 22px;
+  color: white;
   font-size: 16px;
   outline: none;
   border: none;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   text-decoration: none;
-  height: 45px;
+  height: 38px;
   position: relative;
   /* top: 17px; */
   right: 16px;
@@ -129,6 +129,8 @@ export const NavBtnLink = styled(LinkR)`
 `;
 
 export const FileDownload = styled(MdFileDownload)`
-  margin-left: 8px;
+  position: relative;
+  top: 4px;
   font-size: 20px;
+  
 `;
