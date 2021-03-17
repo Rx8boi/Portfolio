@@ -63,7 +63,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-left: -60px;
+  margin-left: -30px;
   position: relative;
   top: 3px;
 

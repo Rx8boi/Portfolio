@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
 color: #fff;
-background: ${({lightBg}) => (lightBg ? 'yellow' : 'purple')};
+background: ${({ lightBg }) => (lightBg ? 'white' : 'black')};
 
 @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -12,7 +12,7 @@ background: ${({lightBg}) => (lightBg ? 'yellow' : 'purple')};
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 860px;
+    height: 960px;
     width: 100%;
     /* Possibly change to 1100px due to navbar */
     max-width:1500px;
@@ -24,7 +24,7 @@ export const InfoWrapper = styled.div`
 
 export const InfoRow = styled.div`
   display: grid;
-  grid-auto-columns: minman(auto, 1fr);
+  grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
     (imgStart ? `'col2 col1'` : `'col1 col2'`)};
@@ -80,12 +80,12 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.div`
-    max-width: 470px;
+    max-width: 460px;
    
     margin-bottom: 20px;
     font-size: 18px;
     line-height: 24px;
-    color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
+    color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
 `;
 
 export const BtnWrap = styled.div`

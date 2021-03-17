@@ -17,7 +17,7 @@ export const Button = styled(Link)`
   transition: all 0.8s ease-in-out;
   z-index: 3;
   position: relative;
-  bottom: -340px;
+  bottom: -320px;
 
   &:hover {
     transition: all 0.5s ease-in-out;
@@ -27,7 +27,7 @@ export const Button = styled(Link)`
 
   @media screen and (max-width: 600px) {
     margin-top: 10px;
-    color: blue;
+    color: white;
     bottom: -190px;
   }
 
