@@ -5,9 +5,9 @@ import { ResumeContainer, ResumeWrapper } from './ResumeElements';
 
 const Portfolio = () => {
     return (
-      <ResumeContainer>
+      <ResumeContainer id="Portfolio">
         <ResumeWrapper>
-          <div style={{ backgroundImage: `url(${BackGround}` }}>
+          <div>
             Hello World
           </div>
         </ResumeWrapper>

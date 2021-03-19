@@ -56,8 +56,3 @@ export const homeObjThree = {
   primary: true,
   darkText: false,
 };
-
-export const homeObjFour = {
-  id: "Portfolio",
-<Portfolio />
-};
