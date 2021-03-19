@@ -1,3 +1,5 @@
+import Portfolio from "../Resume";
+
 export const homeObjOne = {
   id: "about",
   lightBg: false,
@@ -53,4 +55,9 @@ export const homeObjThree = {
   dark: false,
   primary: true,
   darkText: false,
+};
+
+export const homeObjFour = {
+  id: "Portfolio",
+<Portfolio />
 };
