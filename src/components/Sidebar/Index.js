@@ -11,24 +11,21 @@ const Sidebar = ({isOpen, toggle}) => {
         </Icon>
         <SidebarWrapper>
           <SidebarMenu>
-            <SidebarLink to="/" onClick={toggle}>
-              Intro
-            </SidebarLink>
             <SidebarLink to="about" onClick={toggle}>
               About
             </SidebarLink>
             <SidebarLink to="TimeLine" onClick={toggle}>
               TimeLine
             </SidebarLink>
-            <SidebarLink to="Resume" onClick={toggle}>
-              Resume
+            <SidebarLink to="Portfolio" onClick={toggle}>
+              Portfolio
             </SidebarLink>
             <SidebarLink to="Contact" onClick={toggle}>
               Contact
             </SidebarLink>
           </SidebarMenu>
           <SideBtnWrap>
-            <SidebarRoute to="/projects">Projects</SidebarRoute>
+            <SidebarRoute to="/Resume">Resume</SidebarRoute>
           </SideBtnWrap>
         </SidebarWrapper>
       </SidebarContainer>

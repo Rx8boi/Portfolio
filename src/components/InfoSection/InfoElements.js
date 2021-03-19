@@ -56,13 +56,13 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    color: #01bf71;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 700;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+  color: #01bf71;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 `;
 
 export const Heading = styled.h1`
@@ -80,12 +80,12 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.div`
-    max-width: 460px;
-   
-    margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 24px;
-    color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+  max-width: 460px;
+
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  color: ${({ darkText }) => (darkText ? "white" : "black")};
 `;
 
 export const BtnWrap = styled.div`
@@ -96,7 +96,16 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 565px;
   height: 100%;
-  `;
+  
+
+  @media screen and (max-width: 768px) {
+            position: relative;
+            top: -250px;
+            right: -104px;
+            height: 75%;
+            width: 75%;
+  }
+`;
 
   export const Img = styled.img`
     width: 100%;

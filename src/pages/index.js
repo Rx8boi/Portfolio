@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection';
 import InfoSection from "../components/InfoSection";
 import { homeObjOne, homeObjThree, homeObjTwo } from '../components/InfoSection/Data';
 import Portfolio from '../components/Resume';
+import TimeLine from '../components/TimeLine';
 
 const Home = () => {
         //variable -> 
@@ -17,9 +18,8 @@ const Home = () => {
         <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
             <HeroSection />
-        <InfoSection {...homeObjOne}/>
-        <InfoSection {...homeObjTwo}/>
-        <InfoSection {...homeObjThree} />
+        <InfoSection {...homeObjOne} />
+          <TimeLine />
         <Portfolio />
       </>
     );

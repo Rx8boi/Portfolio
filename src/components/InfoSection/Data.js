@@ -2,9 +2,9 @@ import Portfolio from "../Resume";
 
 export const homeObjOne = {
   id: "about",
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: "About",
   headline: "Hi I'm Charles",
   description:
@@ -13,8 +13,8 @@ export const homeObjOne = {
   imgStart: true,
   img: require("../../assets/rx8boi.png"),
   alt: "Car",
-  dark: false,
-  primary: true,
+  dark: true,
+  primary: false,
   darkText: false,
 };
 
@@ -26,17 +26,19 @@ export const homeObjTwo = {
   lightTextDesc: false,
   topLine: "TimeLine",
   headline: "Hi I'm Charles2",
-  description:
-    "Lorem ipsum....",
+  description: "Lorem ipsum....",
   buttonLabel: "git Timeline",
   imgStart: false,
   img: require("../../assets/rx8boi.png"),
   alt: "Car",
+  dark: false,
+  primary: true,
+  darkText: false,
   // dark text of button
-  dark: true, 
-  // frame of button
-  primary: false,
-  darkText: true,
+  // dark: true,
+  // // frame of button
+  // primary: false,
+  // darkText: true,
 };
 
 export const homeObjThree = {
