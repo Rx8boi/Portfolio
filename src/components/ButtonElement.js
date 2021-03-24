@@ -17,7 +17,7 @@ export const Button = styled(Link)`
   transition: all 0.8s ease-in-out;
   z-index: 3;
   position: relative;
-  bottom: -320px;
+  bottom: -348px;
 
   &:hover {
     transition: all 0.5s ease-in-out;
