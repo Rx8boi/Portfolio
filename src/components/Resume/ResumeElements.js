@@ -4,7 +4,6 @@ import BackGround from "../../assets/portfolio.jpg";
 
 export const ResumeContainer = styled.div`
 
-
 `;
 
 export const ResumeWrapper = styled.div`
@@ -17,5 +16,9 @@ export const ResumeWrapper = styled.div`
   @media screen and (max-width: 768px) {
     display: none;
     background-color: white;
+    height: 960px;
+    width: 100%;
+    /* Possibly change to 1100px due to navbar */
+    max-width: 1500px;
   }
 `;

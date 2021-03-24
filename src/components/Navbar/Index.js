@@ -19,7 +19,9 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">gitCharles.com</NavLogo>
+          <NavLogo>
+            <NavLinks to="home">gitCharles.com</NavLinks>
+          </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
@@ -38,7 +40,11 @@ const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to= "../../../public/Charles2021.pdf" target="_blank" download>
+            <NavBtnLink
+              to="../../../public/Charles2021.pdf"
+              target="_blank"
+              download
+            >
               <FileDownload /> Download
             </NavBtnLink>
           </NavBtn>

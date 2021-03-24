@@ -13,13 +13,13 @@ const HeroSection = () => {
     }
 
   return (
-    <HeroContainer id="Home">
+    <HeroContainer id="home">
       <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
         <LottieSplash />
       </HeroBg>
       <HeroBtnWrapper>
-        <Button to="About" onMouseEnter={onHover} onMouseLeave={onHover}>
+        <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover}>
           git Started {hover ? <ArrowForward /> : <ArrowRight />}
         </Button>
       </HeroBtnWrapper>

@@ -9,6 +9,17 @@ import { ReactComponent as SchoolIcon } from "../../assets/timelineLogos/8school
 
 import "react-vertical-timeline-component/style.min.css";
 import { Header, TImeLineContainer, TimeLineWrapper } from "./TimeLineElements";
+import styled from 'styled-components'
+
+const Styles = styled.div`
+
+    .ending {
+        position: relative;
+        bottom: 20px;
+    }
+`;
+
+
 
 const TimeLine = () => {
   let workIconColor = { background: "#01bf71" };
@@ -52,13 +63,21 @@ const TimeLine = () => {
                       href="/"
                     >
                       {data.buttonText}
-                          </a>
-                          
+                    </a>
                   )}
                 </VerticalTimelineElement>
               );
-           ;
             })}
+                      <VerticalTimelineElement
+                          className="ending"
+              contentStyle={{ opacity: "0", display: "none" }}
+              box-shadow={{ opacity: "0" }}
+              contentArrowStyle={{ borderRight: "10px solid  black" }}
+              iconStyle={{
+                background: "black",
+                opacity: "1",
+              }}
+            ></VerticalTimelineElement>
           </VerticalTimeline>
         </TImeLineContainer>
       </TimeLineWrapper>
