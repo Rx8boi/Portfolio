@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 export const TimeLineWrapper = styled.div`
 background-color: black;
+margin-bottom: 40px;
 
 `;
 

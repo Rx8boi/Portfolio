@@ -6,6 +6,7 @@ background: ${({ lightBg }) => (lightBg ? 'white' : 'black')};
 
 @media screen and (max-width: 768px) {
     padding: 100px 0;
+    
 }
 `
 
@@ -104,6 +105,13 @@ export const ImgWrap = styled.div`
             right: -104px;
             height: 75%;
             width: 75%;
+  }
+
+  @media screen and (max-width: 450px) {
+      top: -215px;
+      right: -150px;
+      height: 75%;
+      width: 70%;
   }
 `;
 

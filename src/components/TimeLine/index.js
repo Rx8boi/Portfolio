@@ -76,6 +76,7 @@ const TimeLine = () => {
               iconStyle={{
                 background: "black",
                 opacity: "1",
+                
               }}
             ></VerticalTimelineElement>
           </VerticalTimeline>
