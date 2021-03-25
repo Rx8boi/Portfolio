@@ -14,9 +14,11 @@ export const ResumeWrapper = styled.div`
   width: 100%;
   height: 100%;
   @media screen and (max-width: 768px) {
-    display: none;
+    /* display: none; */
+    background-image: none;
     background-color: white;
-    height: 960px;
+    background-position: center;
+    height: 100%;
     width: 100%;
     /* Possibly change to 1100px due to navbar */
     max-width: 1500px;

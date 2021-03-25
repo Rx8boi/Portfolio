@@ -6,11 +6,7 @@ import { ResumeContainer, ResumeWrapper } from './ResumeElements';
 const Portfolio = () => {
     return (
       <ResumeContainer id="Portfolio">
-        <ResumeWrapper>
-          <div>
-            Hello World
-          </div>
-        </ResumeWrapper>
+        <ResumeWrapper />
       </ResumeContainer>
     );
 }
