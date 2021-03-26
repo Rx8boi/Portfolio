@@ -25,10 +25,9 @@ const Home = () => {
       <HeroSection />
       <InfoSection {...homeObjOne} />
       <TimeLine />
-      <InfoSection {...homeObjOne} />
-      <Portfolio />
+      <InfoSection {...homeObjTwo} />
       <Blog />
-      
+      <InfoSection {...homeObjThree} />
     </>
   );
 };

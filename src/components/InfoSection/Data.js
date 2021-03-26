@@ -1,4 +1,4 @@
-import Portfolio from "../Resume";
+
 
 export const homeObjOne = {
   id: "about",
@@ -20,7 +20,7 @@ export const homeObjOne = {
 
 
 export const homeObjTwo = {
-  id: "TimeLine",
+  id: "Portfolio",
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
@@ -42,16 +42,15 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
-  id: "Resume",
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
-  topLine: "Resume",
+  id: "Contact",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "TimeLine",
   headline: "Hi I'm Charles3",
-  description:
-    "I have a premedical background starting with a Bachelor of Science, Major in Microbiology, Minor in Chemistry and took a dynamic turn towards software engineering. To put it bluntly I'm a Junior Software Engineer looking for the next challenge.",
+  description: "Lorem ipsum....",
   buttonLabel: "git Timeline",
-  imgStart: true,
+  imgStart: false,
   img: require("../../assets/rx8boi.png"),
   alt: "Car",
   dark: false,

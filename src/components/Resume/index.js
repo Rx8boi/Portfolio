@@ -3,14 +3,14 @@ import BackGround from '../../assets/portfolio.jpg'
 import { ResumeContainer, ResumeWrapper, PortfolioCards} from './ResumeElements';
 
 
-const Portfolio = () => {
+const Resume = () => {
     return (
-      <ResumeContainer id="Portfolio">
-            <ResumeWrapper><PortfolioCards />
+      <ResumeContainer id="Resume">
+            <ResumeWrapper>
             </ResumeWrapper>
             
       </ResumeContainer>
     );
 }
 
-export default Portfolio
+export default Resume
