@@ -33,7 +33,7 @@ const Navbar = ({ toggle }) => {
               <NavLinks to="TimeLine">TimeLine</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="Portfolio">Portfolio</NavLinks>
+              <NavLinks to="Projects">Projects</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="Blog">Blog</NavLinks>
@@ -43,13 +43,16 @@ const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink
+            <NavBtnLink to='/Resume'>Resume</NavBtnLink>
+              
+            
+            {/* <NavBtnLink
               to="../../../public/Charles2021.pdf"
               target="_blank"
               download
             >
               <FileDownload /> Download
-            </NavBtnLink>
+            </NavBtnLink> */}
           </NavBtn>
         </NavbarContainer>
       </Nav>

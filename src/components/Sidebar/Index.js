@@ -17,8 +17,8 @@ const Sidebar = ({isOpen, toggle}) => {
             <SidebarLink to="TimeLine" onClick={toggle}>
               TimeLine
             </SidebarLink>
-            <SidebarLink to="Portfolio" onClick={toggle}>
-              Portfolio
+            <SidebarLink to="Projects" onClick={toggle}>
+              Projects
             </SidebarLink>
             <SidebarLink to="Blog" onClick={toggle}>
               Blog
