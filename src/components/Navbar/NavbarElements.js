@@ -2,7 +2,10 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 import { MdFileDownload } from "react-icons/md";
-
+import { BiChevronLeft } from "react-icons/bi";
+import { BiChevronsLeft } from "react-icons/bi";
+import { RiProfileFill } from "react-icons/ri";
+import { RiProfileLine } from "react-icons/ri";
 
 export const Nav = styled.nav`
   background: #000;
@@ -106,7 +109,7 @@ export const NavBtnLink = styled(LinkR)`
   white-space: nowrap;
   padding: 6px 22px;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   outline: none;
   border: none;
   cursor: pointer;
@@ -128,9 +131,69 @@ export const NavBtnLink = styled(LinkR)`
   }
 `;
 
+export const NavBtnLinko = styled(LinkR)`
+  border-radius: 50px;
+  background: black;
+  white-space: nowrap;
+  padding: 6px 22px;
+  color: white;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  height: 50px;
+  position: relative;
+  right: 100px;
+  top: 16px;
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: initial;
+  }
+
+  @media screen and (max-width: 520px) {
+    right: 30px;
+  }
+  @media screen and (max-width: 420px) {
+    right: 35px;
+  }
+`;
+
 export const FileDownload = styled(MdFileDownload)`
   position: relative;
   top: 4px;
   font-size: 20px;
+
+`;
+export const FileDownloado = styled(MdFileDownload)`
+  position: relative;
+  top: 4px;
+  font-size: 20px;
+
+  @media screen and (max-width: 768px) {
+    display: initial;
+  }
+`;
+export const ChevronLeft = styled(BiChevronLeft)`
+  position: relative;
+  top: 4px;
+  font-size: 20px;
   
+`;
+export const ChevronsLeft = styled(BiChevronsLeft)`
+  position: relative;
+  top: 4px;
+  font-size: 20px;
+  
+`;
+export const AdvertisementFill = styled(RiProfileFill)`
+  position: relative;
+  top: 4px;
+  font-size: 20px;
+`;
+
+export const AdvertisementLine = styled(RiProfileLine)`
+  position: relative;
+  top: 4px;
+  font-size: 20px;
 `;

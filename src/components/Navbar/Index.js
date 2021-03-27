@@ -9,12 +9,20 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
-  FileDownload
+  AdvertisementFill,
+  AdvertisementLine
 } from "./NavbarElements";
 import { FaBars } from "react-icons/fa";
+import { useState } from 'react';
 
 
 const Navbar = ({ toggle }) => {
+      const [hover, setHover] = useState(false);
+
+      const onHover = () => {
+        setHover(!hover);
+      };
+
   return (
     <>
       <Nav>
@@ -43,9 +51,10 @@ const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to='/Resume'>Resume</NavBtnLink>
-              
-            
+            <NavBtnLink to="/Resume" onMouseEnter={onHover} onMouseLeave={onHover}>
+              {hover ? <AdvertisementLine /> : <AdvertisementFill />} Resume
+            </NavBtnLink>
+
             {/* <NavBtnLink
               to="../../../public/Charles2021.pdf"
               target="_blank"

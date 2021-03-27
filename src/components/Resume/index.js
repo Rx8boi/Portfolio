@@ -6,19 +6,21 @@ import {
   NavLogo,
   NavBtn,
   NavBtnLink,
+  NavBtnLinko,
   FileDownload,
+  ChevronLeft,
+  ChevronsLeft,
+  MobileIcon
 } from "../Navbar/NavbarElements";
-import { BiChevronLeft } from "react-icons/bi";
-import { BiChevronsLeft } from "react-icons/bi";
 import { useState } from "react";
 
 
-const Resume = () => {
-      const [hover, setHover] = useState(false);
+const Resume = (toggle) => {
+  const [hover, setHover] = useState(false);
 
-      const onHover = () => {
-        setHover(!hover);
-      };
+  const onHover = () => {
+    setHover(!hover);
+  };
   return (
     <>
       <Nav>
@@ -26,11 +28,23 @@ const Resume = () => {
           <NavLogo>
             <NavBtn>
               <NavBtnLink to="/" onMouseEnter={onHover} onMouseLeave={onHover}>
-                {hover ? <BiChevronsLeft /> : <BiChevronLeft />}Back to
-                gitCharles.com
+                {hover ? <ChevronsLeft /> : <ChevronLeft />}Back
               </NavBtnLink>
             </NavBtn>
           </NavLogo>
+          <NavBtnLinko to="/">
+            <ChevronsLeft />
+            Back
+          </NavBtnLinko>
+          <br></br>
+          <NavBtnLinko
+            to="../../../public/Charles2021.pdf"
+            target="_blank"
+            download
+          >
+            <FileDownload /> Download
+          </NavBtnLinko>
+
           <NavBtn>
             <NavBtnLink
               to="../../../public/Charles2021.pdf"
