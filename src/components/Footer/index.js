@@ -9,6 +9,7 @@ import {
   FooterLink,
 } from "./FooterElements";
 import LContact from "../LottieContact.js";
+import LFooter from "../LottieFooter";
 
 const Footer = () => {
   return (
@@ -34,7 +35,8 @@ const Footer = () => {
               <FooterLink to="/Resume">Contact</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>Contact</FooterLinkTitle>
+                          <FooterLinkTitle>Contact Me on LinkedIn</FooterLinkTitle>
+                          <LFooter/>
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>Social media</FooterLinkTitle>

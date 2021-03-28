@@ -6,12 +6,20 @@ const Styles = styled.div`
 
  .container{
     position: relative;
-    left: -100;
-    top: 20;
+    left: -46;
+    top: -60;
+    width: 5%;
+    height: 5%;
 } 
+
+  .mobileLink {
+    @media screen and (min-width:768px) {
+      display: none;
+    }
+  }
 `;
 
-const LContact = () => {
+const LFooter = () => {
   const container = useRef(null);
 
   useEffect(() => {
@@ -20,15 +28,16 @@ const LContact = () => {
       renderer: "svg",
       loop: true,
       autoplay: true,
-      animationData: require("../assets/lottie/fbookinstatwit.json"),
+      animationData: require("../assets/lottie/Contact.json"),
     });
   }, []);
 
   return (
     <Styles>
-      <div className="container" ref={container}></div>
+      <a href="https://www.linkedin.com/in/charlesbutlerjr" className="container" ref={container}></a>
+      <a href="https://www.linkedin.com/in/charlesbutlerjr" className="mobileLink">Linkedin</a>
     </Styles>
   );
 };
 
-export default LContact;
+export default LFooter;

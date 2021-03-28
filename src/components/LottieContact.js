@@ -3,12 +3,16 @@ import lottie from "lottie-web";
 import styled from "styled-components";
 
 const Styles = styled.div`
-
- .container{
+  .container {
     position: relative;
     left: -100;
     top: 20;
-} 
+    
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    
+  }
 `;
 
 const LContact = () => {
