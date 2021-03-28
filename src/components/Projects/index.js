@@ -8,6 +8,7 @@ import {
   ProjectsP,
   ProjectsIcon,
 } from "./ProjectsElements";
+import Icon0 from "../../assets/timelineLogos/important.svg";
 import Icon1 from "../../assets/timelineLogos/important.svg";
 import Icon2 from "../../assets/timelineLogos/important.svg";
 import Icon3 from "../../assets/timelineLogos/important.svg";
@@ -21,6 +22,12 @@ const Projects = () => {
       <ProjectsContainer id="Projects">
         <ProjectsH1>Projects</ProjectsH1>
         <ProjectsWrapper>
+          <ProjectsCard>
+            <ProjectsIcon src={Icon0} />
+            <ProjectsH2> Carbon Fiber Iron Man Helmet</ProjectsH2>
+            <ProjectsP>Summary: C++ Arduino uno programming with custom machine application</ProjectsP>
+            {/* <ProjectsSubtitle darkText={darkText}> {description}</ProjectsSubtitle> */}
+          </ProjectsCard>
           <ProjectsCard>
             <ProjectsIcon src={Icon1} />
             <ProjectsH2> Video Game Tracker CLI</ProjectsH2>
