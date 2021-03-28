@@ -51,7 +51,6 @@ export const homeObjThree = {
   description: "Lorem ipsum....",
   buttonLabel: "git Timeline",
   imgStart: false,
-  img: require("../../assets/rx8boi.png"),
   alt: "Car",
   dark: false,
   primary: true,
