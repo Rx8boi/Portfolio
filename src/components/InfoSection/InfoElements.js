@@ -97,21 +97,24 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 565px;
   height: 100%;
-  
 
   @media screen and (max-width: 768px) {
-            position: relative;
-            top: -250px;
-            right: -104px;
-            height: 75%;
-            width: 75%;
+    position: relative;
+    top: -200px;
+    right: -104px;
+    height: 75%;
+    width: 75%;
   }
 
   @media screen and (max-width: 450px) {
-      top: -215px;
-      right: -150px;
-      height: 75%;
-      width: 70%;
+    top: -155px;
+    right: -120px;
+    height: 70%;
+    width: 70%;
+  }
+
+  @media screen and (max-width: 350px) {
+  display:none;
   }
 `;
 
