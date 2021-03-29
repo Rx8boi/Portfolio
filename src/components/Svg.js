@@ -9,14 +9,14 @@ import styled from "styled-components";
 
 const Styles = styled.div`
   .List {
-    display: cover;
+    justify-content: space-between;
   }
 `;
 const SocialLogo = () => {
   return (
     <Styles>
       <div className="List">
-        <a href="https://www.instagram.com/charles.atx">
+        {/* <a href="https://www.instagram.com/charles.atx">
           <InstaLogo />
         </a>
         <a href="https://www.facebook.com/charlesbutler8">
@@ -24,7 +24,7 @@ const SocialLogo = () => {
         </a>
         <a href="https://twitter.com/Charles_atx_">
           <TwitterLogo />
-        </a>
+        </a> */}
         <a href="https://www.linkedin.com/in/charlesbutlerjr">
           <LinkedLogo />
         </a>
