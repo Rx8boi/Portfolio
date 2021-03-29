@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ReactComponent as ReactLogo }  from "../../assets/icons8-react.svg";
 import { Link } from 'react-router-dom';
 
 export const FooterContainer = styled.footer`
@@ -51,14 +52,12 @@ text-decoration: underline;
 `
 export const FooterLinkTitle2 = styled.h1`
   font-size: 16px;
-  margin-left: 40px;
+  margin-left: 25px;
   margin-bottom: 16px;
   text-decoration: underline;
 
-  @media screen and (max-width: 420px) {
-    margin: 0;
-    padding: 10px;
-    width: 100%;
+  @media screen and (max-width: 820px) {
+    margin-left: 0px;
   }
 `;
 export const FooterLink = styled(Link)`
@@ -71,4 +70,51 @@ export const FooterLink = styled(Link)`
     color: #f3f2f2;
     transition: 0.5s ease-in-out;
   }
+`;
+
+export const SocialMedia = styled.section`
+    max-width: 1000px;
+    width: 100%;
+`;
+export const SocialMediaWrap = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 40px auto 0 auto;
+
+  @media screen and (max-width: 820px) {
+      flex-direction: column;
+  }
+`;
+
+export const SocialLogo = styled(Link)`
+  color: white;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  font-weight: bold;
+`;
+
+export const WebsiteRights = styled.small`
+    color: white;
+    margin-bottom: 16px;
+`;
+export const SocialIcons = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+`;
+export const SocialIconLink = styled.a`
+    color: white;
+    font-size: 24px;
+`;
+
+export const ReactSvg = styled(ReactLogo)`
+
 `;

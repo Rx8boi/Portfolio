@@ -3,7 +3,12 @@ import { BlogWrapper } from "./BlogElements";
 
 const Blog = () => {
   return (
-    <BlogWrapper id="Blog">
+    <>
+      <br></br>
+      <br></br>
+      <br></br>
+      <BlogWrapper id="Blog">
+        <br></br>
       <iframe
         src="https://cdbutle.medium.com/"
         frameBorder="0"
@@ -12,7 +17,8 @@ const Blog = () => {
         title="Charles Medium"
         sandbox="allow-same-origin"
       ></iframe>
-    </BlogWrapper>
+        </BlogWrapper>
+        </>
   );
 };
 

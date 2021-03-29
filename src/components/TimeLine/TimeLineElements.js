@@ -9,14 +9,15 @@ margin-bottom: 40px;
 `;
 
 export const Header = styled.div`
-  color: #01bf71;
+  color: white;
   font-size: 12px;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-position: relative;
-top: 100px;
+  text-decoration: none;
+  position: relative;
+  top: 100px;
   margin-left: 40px;
   margin-bottom: 140px;
 `
