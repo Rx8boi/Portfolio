@@ -8,14 +8,6 @@ const Styles = styled.div`
     position: relative;
     left: -46;
     top: -60;
-    width: 5%;
-    height: 5%;
-} 
-
-  .mobileLink {
-    @media screen and (min-width:768px) {
-      display: none;
-    }
   }
 `;
 
@@ -35,7 +27,6 @@ const LFooter = () => {
   return (
     <Styles>
       <a href="https://www.linkedin.com/in/charlesbutlerjr" className="container" ref={container}></a>
-      <a href="https://www.linkedin.com/in/charlesbutlerjr" className="mobileLink">Linkedin</a>
     </Styles>
   );
 };

@@ -49,6 +49,18 @@ font-size: 16px;
 margin-bottom: 16px;
 text-decoration: underline;
 `
+export const FooterLinkTitle2 = styled.h1`
+  font-size: 16px;
+  margin-left: 40px;
+  margin-bottom: 16px;
+  text-decoration: underline;
+
+  @media screen and (max-width: 420px) {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
+`;
 export const FooterLink = styled(Link)`
   color: #fff;
   text-decoration: none;
