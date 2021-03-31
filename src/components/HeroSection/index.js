@@ -23,6 +23,7 @@ const HeroSection = () => {
           git Started {hover ? <ArrowForward /> : <ArrowRight />}
         </Button>
       </HeroBtnWrapper>
+      <br></br>
     </HeroContainer>
   );
 };
