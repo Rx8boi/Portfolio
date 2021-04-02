@@ -14,9 +14,8 @@ const Blog = () => {
         frameBorder="0"
         height="100%"
         width="100%"
-        title="Charles Medium"
-        sandbox="allow-same-origin"
-      ></iframe>
+          title="Charles Medium"
+          x-frame-options="same-origin"></iframe>
         </BlogWrapper>
         </>
   );

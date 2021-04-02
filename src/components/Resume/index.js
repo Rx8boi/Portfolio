@@ -9,8 +9,7 @@ import {
   NavBtnLinko,
   FileDownload,
   ChevronLeft,
-  ChevronsLeft,
-  MobileIcon
+  ChevronsLeft
 } from "../Navbar/NavbarElements";
 import { useState } from "react";
 

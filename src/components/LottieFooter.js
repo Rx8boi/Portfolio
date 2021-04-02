@@ -25,9 +25,11 @@ const LFooter = () => {
   }, []);
 
   return (
+    
     <Styles>
       <a href="https://www.linkedin.com/in/charlesbutlerjr" className="container" ref={container}></a>
-    </Styles>
+      </Styles>
+      
   );
 };
 

@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "../ButtonElementO";
 import {
   InfoContainer,
   InfoWrapper,
@@ -10,7 +9,6 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  BtnWrap,
   ImgWrap,
   Img,
 } from "./InfoElements";
@@ -24,12 +22,8 @@ const InfoSection = ({
   headline,
   darkText,
   description,
-  buttonLabel,
   img,
   alt,
-  primary,
-  dark,
-  dark2,
 }) => {
   return (
     <>

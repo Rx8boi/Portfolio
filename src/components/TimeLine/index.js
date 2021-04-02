@@ -9,14 +9,14 @@ import { ReactComponent as SchoolIcon } from "../../assets/timelineLogos/8school
 
 import "react-vertical-timeline-component/style.min.css";
 import { Header, TImeLineContainer, TimeLineWrapper } from "./TimeLineElements";
-import styled from "styled-components";
+// import styled from "styled-components";
 
-const Styles = styled.div`
-  .ending {
-    position: relative;
-    bottom: 20px;
-  }
-`;
+// const Styles = styled.div`
+//   .ending {
+//     position: relative;
+//     bottom: 20px;
+//   }
+// `;
 
 const TimeLine = () => {
   let workIconColor = { background: "#01bf71" };

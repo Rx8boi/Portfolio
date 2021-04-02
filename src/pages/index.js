@@ -4,15 +4,13 @@ import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
 import {
-  homeObjOne,
-  homeObjThree,
-  homeObjTwo,
+  homeObjOne
 } from "../components/InfoSection/Data";
-import Portfolio from "../components/Resume";
 import TimeLine from "../components/TimeLine";
-import Blog from "../components/Blog";
+// import Blog from "../components/Blog";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
+import BlogCall from "../components/BlogCall/BlogCall";
 
 const Home = () => {
   //variable ->
@@ -28,7 +26,7 @@ const Home = () => {
       <InfoSection {...homeObjOne} />
       <TimeLine />
       <Projects />
-      <Blog />
+      <BlogCall />
       <Footer />
       
     </>
