@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Axios from "axios";
 import MediumBlog from "../MediumBlog/index";
 import { ImSpinner8 } from "react-icons/im";
+import { BlogCallContainer} from './BlogCallElements'
 
 export class BlogCall extends Component {
   constructor(props) {
@@ -51,10 +52,10 @@ export class BlogCall extends Component {
         );
         console.log(data, res);
       })
-    //   .catch((e) => {
-    //     this.setState({ error: e.toJSON() });
-    //     console.log(e);
-    //   });
+      .catch((e) => {
+        this.setState({ error: e.toJSON() });
+        console.log(e);
+      });
   }
   render() {
     let post;
@@ -80,17 +81,25 @@ export class BlogCall extends Component {
       );
     }
     return (
-      <>
-        <div className="container">
-          <div className="row">
-            {/* {this.state.item.map((post, index) => (
+      <div id="Blog">
+        <BlogCallContainer>
+          <br></br>
+          <br></br>
+          <h1>Blog</h1>
+          <br></br>
+          <div className="container">
+            <div className="row ">
+              
+              {/* {this.state.item.map((post, index) => (
           <ShowBlog key={index} {...post} {...this.state.profile} {...index} />
         ))} */}
 
-            {post}
-          </div>
-        </div>
-      </>
+                {post}
+                </div>
+            </div>
+         
+        </BlogCallContainer>
+      </div>
     );
   }
 }

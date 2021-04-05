@@ -6,8 +6,8 @@ const Styles = styled.div`
 
  .container{
     position: relative;
-    left: -46;
-    top: -60;
+    left: -29;
+    top: -230;
   }
 `;
 
@@ -27,8 +27,8 @@ const LFooter = () => {
   return (
     
     <Styles>
-      <a href="https://www.linkedin.com/in/charlesbutlerjr" className="container" ref={container}></a>
-      </Styles>
+      <a href="https://www.linkedin.com/in/charlesbutlerjr" className="container" ref={container}> </a>
+    </Styles>
       
   );
 };
