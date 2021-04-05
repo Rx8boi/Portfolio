@@ -6,7 +6,7 @@ import ToText from "../ToText"
 
 const MediumBlog = (props, p) => {
   return (
-    <div className={`col-md-4 col-sm-6 col-xs-12 ${c.grid}`}>
+    <div className={`${c.grid}`}>
       <div className={c.cardsmall}>
         <div
           className={c.cardpost__image}
@@ -74,6 +74,7 @@ const MediumBlog = (props, p) => {
           </span>
         </div>
       </div>
+      <br></br>
     </div>
   );
 };

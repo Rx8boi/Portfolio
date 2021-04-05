@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import Axios from "axios";
 import MediumBlog from "../MediumBlog/index";
 import { ImSpinner8 } from "react-icons/im";
-import { BlogCallContainer} from './BlogCallElements'
+import {
+  BlogCallContainer,
+  BlogCallWrapper,
+  BlogCallHeader,
+} from "./BlogCallElements";
 
 export class BlogCall extends Component {
   constructor(props) {
@@ -52,52 +56,31 @@ export class BlogCall extends Component {
         );
         console.log(data, res);
       })
-      .catch((e) => {
-        this.setState({ error: e.toJSON() });
-        console.log(e);
-      });
+      ;
   }
   render() {
-    let post;
-
-    if (this.state.item) {
-      post = this.state.item.map((post, index) => (
-        <MediumBlog key={index} {...post} {...this.state.profile} {...index} />
-      ));
-    }
-    if (this.state.isloading) {
-      post = <ImSpinner8 />;
-    }
-    if (this.state.error) {
-      let error = this.state.error.code
-        ? this.state.error.code
-        : this.state.error.name;
-      let errorMsg = this.state.error.message;
-      post = (
-        <>
-          <h2 className="red center1">{error}</h2>
-          <p className="errorMessage center1">{errorMsg}</p>
-        </>
-      );
-    }
+   
     return (
       <div id="Blog">
         <BlogCallContainer>
           <br></br>
           <br></br>
-          <h1>Blog</h1>
-          <br></br>
-          <div className="container">
-            <div className="row ">
-              
-              {/* {this.state.item.map((post, index) => (
-          <ShowBlog key={index} {...post} {...this.state.profile} {...index} />
-        ))} */}
 
-                {post}
-                </div>
-            </div>
-         
+          <br></br>
+          <BlogCallHeader>
+            <h1>Blog Posts</h1>
+            <br></br>
+          </BlogCallHeader>
+          <BlogCallWrapper>
+            {this.state.item.map((post, index) => (
+              <MediumBlog
+                key={index}
+                {...post}
+                {...this.state.profile}
+                {...index}
+              />
+            ))}
+          </BlogCallWrapper>
         </BlogCallContainer>
       </div>
     );

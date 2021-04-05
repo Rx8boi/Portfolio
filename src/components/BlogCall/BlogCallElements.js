@@ -1,5 +1,3 @@
-
-
 // export const BlogCallContainer = styled.div`
 //   background-color: black;
 //   max-width: 100%;
@@ -12,13 +10,13 @@
 import styled from "styled-components";
 
 export const BlogCallContainer = styled.div`
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   /* background-color: #010606; change */
   background-color: black;
+  color: white;
 
   @media screen and (max-width: 700px) {
     height: 1100px;
@@ -31,8 +29,14 @@ export const BlogCallContainer = styled.div`
   }
 `;
 
+export const BlogCallHeader = styled.div`
+  color: white;
+  padding: 20 30px;
+  font-size: 1rem; 
+`;
+
 export const BlogCallWrapper = styled.div`
-  max-width: 1400px;
+  max-width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
