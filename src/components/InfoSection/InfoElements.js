@@ -57,13 +57,23 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #01bf71;
+  /* color: #01bf71;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
+  margin-bottom: 30px; */
+  color: black;
   margin-bottom: 30px;
+  font-family: "Menlo", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  text-decoration: none;
 `;
 
 export const Heading = styled.h1`

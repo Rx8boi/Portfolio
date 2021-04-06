@@ -12,7 +12,7 @@ import styled from "styled-components";
 export const BlogCallContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: right;
   align-items: left;
   /* background-color: #010606; change */
   background-color: black;
@@ -31,15 +31,24 @@ export const BlogCallContainer = styled.div`
 
 export const BlogCallHeader = styled.div`
   color: white;
-  padding: 20 30px;
-  font-size: 1rem; 
+  /* padding: 19 40px; */
+  margin-top: 35px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  font-family: "Menlo", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  text-decoration: none;
 `;
 
 export const BlogCallWrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   grid-gap: 16px;
   padding: 0 30px;

@@ -28,9 +28,9 @@
     background-repeat: no-repeat;
 }
 
-.grid {
-    /* margin-bottom: 4.5rem!important; */
-}
+/* .grid {
+    margin-bottom: 4.5rem!important;
+} */
 
 .grid:nth-child(3n+1) {
     clear: both;

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Axios from "axios";
 import MediumBlog from "../MediumBlog/index";
-import { ImSpinner8 } from "react-icons/im";
 import {
   BlogCallContainer,
   BlogCallWrapper,

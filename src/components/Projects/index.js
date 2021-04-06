@@ -20,12 +20,16 @@ const Projects = () => {
   return (
     <div>
       <ProjectsContainer id="Projects">
+        <br></br>
         <ProjectsH1>Projects</ProjectsH1>
         <ProjectsWrapper>
           <ProjectsCard>
             <ProjectsIcon src={Icon0} />
             <ProjectsH2> Carbon Fiber Iron Man Helmet</ProjectsH2>
-            <ProjectsP>Summary: C++ Arduino uno programming with custom machine application</ProjectsP>
+            <ProjectsP>
+              Summary: C++ Arduino uno programming with custom machine
+              application
+            </ProjectsP>
             {/* <ProjectsSubtitle darkText={darkText}> {description}</ProjectsSubtitle> */}
           </ProjectsCard>
           <ProjectsCard>
@@ -77,6 +81,7 @@ const Projects = () => {
           </ProjectsCard>
         </ProjectsWrapper>
       </ProjectsContainer>
+
     </div>
   );
 };
