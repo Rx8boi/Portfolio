@@ -7,6 +7,7 @@ import {
   ProjectsH2,
   ProjectsP,
   ProjectsIcon,
+  SlidesSection
 } from "./ProjectsElements";
 
 import Icon0 from "../../assets/languages/c-logo.svg";
@@ -39,21 +40,23 @@ const Projects = ({ slides }) => {
       <ProjectsContainer id="Projects">
         <br></br>
         <ProjectsH1>Projects</ProjectsH1>
-        <section className="slider">
-          {/* <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
+        <SlidesSection>
+          <section className="slider">
+            {/* <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
           <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} /> */}
-          {ProjectData.map((slide, index) => {
-            return (
-              <ProjectsCard>
-                <ProjectsIcon src={slide.imgA} />
-                <ProjectsIcon src={slide.imgB} />
-                <br></br>
-                <h3>{slide.title}</h3>
-                <h4>{slide.summary}</h4>
-              </ProjectsCard>
-            );
-          })}
-        </section>
+            {ProjectData.map((slide, index) => {
+              return (
+                <ProjectsCard>
+                  <ProjectsIcon src={slide.imgA} />
+                  <ProjectsIcon src={slide.imgB} />
+                  <br></br>
+                  <h3>{slide.title}</h3>
+                  <h4>{slide.summary}</h4>
+                </ProjectsCard>
+              );
+            })}
+          </section>
+        </SlidesSection>
         {/* // <ProjectsWrapper>
         //   <ProjectsCard>
         //     <div>

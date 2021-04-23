@@ -116,3 +116,12 @@ export const ProjectsP = styled.div`
 `;
 // export const ProjectsSubtitle = styled.div`
 // `
+
+export const SlidesSection = styled.div`
+ /* position: relative;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center; */
+
+`;
