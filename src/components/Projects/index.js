@@ -42,19 +42,21 @@ const Projects = ({ slides }) => {
         <ProjectsH1>Projects</ProjectsH1>
         <SlidesSection>
           <section className="slider">
-            {/* <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
-          <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} /> */}
-            {ProjectData.map((slide, index) => {
-              return (
-                <ProjectsCard>
-                  <ProjectsIcon src={slide.imgA} />
-                  <ProjectsIcon src={slide.imgB} />
-                  <br></br>
-                  <h3>{slide.title}</h3>
-                  <h4>{slide.summary}</h4>
-                </ProjectsCard>
-              );
-            })}
+            <ProjectsWrapper>
+              <FaArrowAltCircleLeft className="left-arrow"  />
+          <FaArrowAltCircleRight className="right-arrow" />
+              {ProjectData.map((slide, index) => {
+                return (
+                  <ProjectsCard>
+                    <ProjectsIcon src={slide.imgA} />
+                    <ProjectsIcon src={slide.imgB} />
+                    <br></br>
+                    <h3>{slide.title}</h3>
+                    <h4>{slide.summary}</h4>
+                  </ProjectsCard>
+                );
+              })}
+            </ProjectsWrapper>
           </section>
         </SlidesSection>
         {/* // <ProjectsWrapper>

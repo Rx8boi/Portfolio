@@ -25,34 +25,16 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const ProjectsWrapper = styled.div`
-  max-width: 1400px;
+  max-width: 100%;
+  max-height: 100%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  grid-gap: 16px;
   padding: 0 30px;
-  /* background-color: red; */
-
-  @media screen and (max-width: 1000px) {
-    grid-template-columns: 1fr 1fr;
-    max-width: 1900px;
-    height: 900px;
-  }
-
-  @media screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
-    padding: 0 20px;
-    margin-bottom: 70px;
-    grid-gap: 6px;
-    
-    /* background-color: red; */
-  }
+  
 `;
 
 export const ProjectsCard = styled.div`
- 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -63,21 +45,38 @@ export const ProjectsCard = styled.div`
   transition: all 0.5s ease-in-out;
   color: black;
   background-color: rgba(248, 249, 249, 0.2);
-  
+   */
+
+  width: 1000px;
+  height: 600px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 3px 13px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+  color: black;
+  background-color: rgba(248, 249, 249, 0.2);
 
   &:hover {
     transform: scale(1.02);
     transition: all 0.5s ease-in-out;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 768px) {
+    width: 600px;
+    height: 900px;
+  }
 `;
+
+
+
 export const ProjectsIcon = styled.img`
   height: 100px;
   width: 100px;
   margin-bottom: 10px;
 
   @media screen and (max-width: 768px) {
- display: none;
+ display: inline-flex;
   }
 `;
 
