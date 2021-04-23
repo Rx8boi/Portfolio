@@ -19,6 +19,7 @@ import LFooter from "../LottieFooter";
 import SocialLogo2 from "../Svg";
 import { FaYoutube, FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 
+
 const Footer = () => {
   return (
     <FooterContainer>
@@ -56,7 +57,10 @@ const Footer = () => {
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>Contact Me</FooterLinkTitle>
-              <LFooter />
+            
+            
+                <LFooter />
+              
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>

@@ -5,9 +5,10 @@ import styled from "styled-components";
 const Styles = styled.div`
 
  .container{
+
     position: relative;
-    left: -29;
-    top: -230;
+    left: 20px;
+ 
   }
 `;
 

@@ -51,7 +51,7 @@ export const ProjectsWrapper = styled.div`
 `;
 
 export const ProjectsCard = styled.div`
-  background: black;
+ 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -59,10 +59,10 @@ export const ProjectsCard = styled.div`
   border-radius: 10px;
   max-height: 340px;
   padding: 30px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 3px 13px rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease-in-out;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: rgba(248, 249, 249, 0.2);
   
 
   &:hover {

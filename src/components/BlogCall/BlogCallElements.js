@@ -17,15 +17,16 @@ export const BlogCallContainer = styled.div`
   /* background-color: #010606; change */
   background-color: black;
   color: white;
+  max-height: 1900px;
 
   @media screen and (max-width: 700px) {
-    height: 1100px;
+    height: 1900px;
   }
 
   @media screen and (max-width: 480px) {
-    height: 1300px;
+    height: 1900px;
     margin-bottom: 10px;
-    background-color: red;
+    
   }
 `;
 
@@ -70,7 +71,6 @@ export const BlogCallWrapper = styled.div`
 `;
 
 export const BlogCard = styled.div`
-  background: black;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

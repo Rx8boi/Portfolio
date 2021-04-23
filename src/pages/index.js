@@ -11,6 +11,7 @@ import TimeLine from "../components/TimeLine";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import BlogCall from "../components/BlogCall/BlogCall";
+import { ProjectData } from "../components/Projects/Data";
 
 const Home = () => {
   //variable ->
@@ -25,7 +26,7 @@ const Home = () => {
       <HeroSection />
       <InfoSection {...homeObjOne} />
       <TimeLine />
-      <Projects />
+      <Projects slides={ProjectData}/>
       <BlogCall />
       <Footer />
       
