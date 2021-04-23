@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
-  height: 1350px;
+  height: 1050px;
   display: justify;
   flex-direction: column;
   justify-content: center;
@@ -82,10 +82,8 @@ export const ProjectsIcon = styled.img`
 
 export const ProjectsH1 = styled.div`
   color: black;
-  margin-bottom: 64px;
   margin-left: 40px;
   font-family: "Menlo", sans-serif;
-  font-weight: 500;
   font-size: 1.8rem;
   line-height: 16px;
   font-weight: 700;

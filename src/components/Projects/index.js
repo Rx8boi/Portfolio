@@ -30,11 +30,23 @@ import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
 
 const Projects = ({ slides }) => {
   const [current, setCurrent] = useState(0);
-  const length = slides.length
+  const length = slides.length;
   //  const handleClose = () => setShow(false);
   //  const handleShow = () => setShow(true);
 
+  const nextProject = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
 
+  const prevProject = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  console.log(current);
+
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  }
   return (
     <div>
       <ProjectsContainer id="Projects">
@@ -43,17 +55,30 @@ const Projects = ({ slides }) => {
         <SlidesSection>
           <section className="slider">
             <ProjectsWrapper>
-              <FaArrowAltCircleLeft className="left-arrow"  />
-          <FaArrowAltCircleRight className="right-arrow" />
+              <FaArrowAltCircleLeft
+                className="left-arrow"
+                onClick={prevProject}
+              />
+              <FaArrowAltCircleRight
+                className="right-arrow"
+                onClick={nextProject}
+              />
               {ProjectData.map((slide, index) => {
                 return (
-                  <ProjectsCard>
-                    <ProjectsIcon src={slide.imgA} />
-                    <ProjectsIcon src={slide.imgB} />
-                    <br></br>
-                    <h3>{slide.title}</h3>
-                    <h4>{slide.summary}</h4>
-                  </ProjectsCard>
+                  <div
+                    className={index === current ? "slide active" : "slide"}
+                    key={index}
+                  >
+                    {index === current && (
+                      <ProjectsCard>
+                        <ProjectsIcon src={slide.imgA} />
+                        <ProjectsIcon src={slide.imgB} />
+                        <br></br>
+                        <h3>{slide.title}</h3>
+                        <h4>{slide.summary}</h4>
+                      </ProjectsCard>
+                    )}
+                  </div>
                 );
               })}
             </ProjectsWrapper>

@@ -16,7 +16,7 @@ export const ProjectData = [
   modalVid: require("../../assets/rx8boi.png"),
   modalGithub: "",
   modalCodPen: "",
-  title: "Carbon Fiber Iron Man Helmet",
+  title: "2Carbon Fiber Iron Man Helmet",
   summary: "C++ Arduino uno programming with custom machine application",
 },
     {
@@ -26,7 +26,7 @@ export const ProjectData = [
   modalVid: require("../../assets/rx8boi.png"),
   modalGithub: "",
   modalCodPen: "",
-  title: "Carbon Fiber Iron Man Helmet",
+  title: "3Carbon Fiber Iron Man Helmet",
   summary: "C++ Arduino uno programming with custom machine application",
 },
     {
@@ -36,7 +36,7 @@ export const ProjectData = [
   modalVid: require("../../assets/rx8boi.png"),
   modalGithub: "",
   modalCodPen: "",
-  title: "Carbon Fiber Iron Man Helmet",
+  title: "4Carbon Fiber Iron Man Helmet",
   summary: "C++ Arduino uno programming with custom machine application",
 },
     {
@@ -46,7 +46,7 @@ export const ProjectData = [
   modalVid: require("../../assets/rx8boi.png"),
   modalGithub: "",
   modalCodPen: "",
-  title: "Carbon Fiber Iron Man Helmet",
+  title: "5Carbon Fiber Iron Man Helmet",
   summary: "C++ Arduino uno programming with custom machine application",
 },
     {
@@ -56,7 +56,7 @@ export const ProjectData = [
   modalVid: require("../../assets/rx8boi.png"),
   modalGithub: "",
   modalCodPen: "",
-  title: "Carbon Fiber Iron Man Helmet",
+  title: "6Carbon Fiber Iron Man Helmet",
   summary: "C++ Arduino uno programming with custom machine application",
 },
 ]
