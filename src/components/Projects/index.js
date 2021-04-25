@@ -24,7 +24,7 @@ import { Button } from 'react-bootstrap';
 import ProjectsModal from "../ProjectsModal";
 import { ProjectData } from './Data'
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
-
+import { ReactComponent as GitLogo } from "../../assets/icons8-github.svg";
 
 
 
@@ -71,11 +71,15 @@ const Projects = ({ slides }) => {
                   >
                     {index === current && (
                       <ProjectsCard>
-                        <ProjectsIcon src={slide.imgA} />
-                        <ProjectsIcon src={slide.imgB} />
                         <br></br>
                         <h3>{slide.title}</h3>
                         <h4>{slide.summary}</h4>
+                        <a href={slide.github}>
+                          <GitLogo />
+                        </a>
+                        
+                        <ProjectsIcon src={slide.imgA} />
+                        <ProjectsIcon src={slide.imgB} />
                       </ProjectsCard>
                     )}
                   </div>

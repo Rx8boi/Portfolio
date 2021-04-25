@@ -3,11 +3,11 @@ export const ProjectData = [
   index: 1,
   imgA: require("../../assets/languages/c-logo.svg"),
   imgB: require("../../assets/languages/arduino.svg"),
-  modalVid: require("../../assets/rx8boi.png"),
-  modalGithub: "",
+  Vid: require("../../assets/rx8boi.png"),
   modalCodPen: "",
-  title: "Carbon Fiber Iron Man Helmet",
-  summary: "C++ Arduino uno programming with custom machine application",
+title: "Carbon Fiber Iron Man Helmet",
+    summary: "C++ Arduino uno programming with custom machine application",
+  github: "https://github.com/Rx8boi/GameRateSwap"
 },
     {
   index: 2,
