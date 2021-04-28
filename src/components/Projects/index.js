@@ -4,10 +4,10 @@ import {
   ProjectsWrapper,
   ProjectsCard,
   ProjectsH1,
-  ProjectsH2,
   ProjectsP,
   ProjectsIcon,
-  SlidesSection
+  SlidesSection,
+  ProjectsFooter
 } from "./ProjectsElements";
 
 import Icon0 from "../../assets/languages/c-logo.svg";
@@ -71,15 +71,38 @@ const Projects = ({ slides }) => {
                   >
                     {index === current && (
                       <ProjectsCard>
-                        <br></br>
                         <h3>{slide.title}</h3>
-                        <h4>{slide.summary}</h4>
-                        <a href={slide.github}>
-                          <GitLogo />
-                        </a>
-                        
-                        <ProjectsIcon src={slide.imgA} />
-                        <ProjectsIcon src={slide.imgB} />
+                        <br></br>
+                        <hr></hr>
+                        <br></br>
+                        <ProjectsP>
+                          <iframe
+                            width="420"
+                            height="315"
+                            src={slide.Vid}
+                          ></iframe>
+
+                          <div>
+                            <h4>{slide.summary}</h4>
+                             <a href={slide.github}>
+                              <GitLogo />
+                            </a>
+                          </div>
+                        </ProjectsP>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                          <hr></hr>
+                        <ProjectsFooter>
+                          
+                          <ProjectsIcon src={slide.imgA} />
+                          <ProjectsIcon src={slide.imgB} />
+                          <ProjectsIcon src={slide.imgC} />
+                          <ProjectsIcon src={slide.imgD} />
+                        </ProjectsFooter>
                       </ProjectsCard>
                     )}
                   </div>
@@ -88,76 +111,6 @@ const Projects = ({ slides }) => {
             </ProjectsWrapper>
           </section>
         </SlidesSection>
-        {/* // <ProjectsWrapper>
-        //   <ProjectsCard>
-        //     <div>
-        //       <ProjectsIcon src={Icon0} />
-        //       <ProjectsIcon src={Icon1} />
-        //     </div>
-        //     <ProjectsH2> Carbon Fiber Iron Man Helmet</ProjectsH2>
-        //     <ProjectsP>
-        //       Summary: C++ Arduino uno programming with custom machine
-        //       application
-        //     </ProjectsP>
-        //     <ProjectsModal />
-        //   </ProjectsCard>
-        //   <ProjectsCard>
-        //     <ProjectsIcon src={Icon0} />
-        //     <ProjectsH2> Carbon Fiber Iron Man Helmet</ProjectsH2>
-        //     <ProjectsP>
-        //       Summary: C++ Arduino uno programming with custom machine
-        //       application
-        //     </ProjectsP>
-           
-        //   </ProjectsCard>
-        //   <ProjectsCard>
-        //     <ProjectsIcon src={Icon1} />
-        //     <ProjectsH2> Video Game Tracker CLI</ProjectsH2>
-        //     <ProjectsP>Summary: Ruby based project with fetch calls</ProjectsP>
-            
-        //   </ProjectsCard>
-        //   <ProjectsCard>
-        //     <ProjectsIcon src={Icon2} />
-        //     <ProjectsH2> Marvel Movie Project</ProjectsH2>
-        //     <ProjectsP>Summary: Utilized Sinatra gem.</ProjectsP>
-            
-        //   </ProjectsCard>
-        //   <ProjectsCard>
-        //     <ProjectsIcon src={Icon3} />
-        //     <ProjectsH2> GameRateSwap</ProjectsH2>
-        //     <ProjectsP>
-        //       Summary: GameRateSwap application that utilizes rails framework,
-        //       omniauth gem & Devise.
-        //     </ProjectsP>
-            
-        //   </ProjectsCard>
-        //   <ProjectsCard>
-        //     <ProjectsIcon src={Icon4} />
-        //     <ProjectsH2> My Fantasy League: NBA</ProjectsH2>
-        //     <ProjectsP>
-        //       Summary: Fantasy League for when you're ready for game time. NBA
-        //       support with future NFL updates.
-        //     </ProjectsP>
-            
-        //   </ProjectsCard>
-        //   <ProjectsCard>
-        //     <ProjectsIcon src={Icon5} />
-        //     <ProjectsH2> A Good Calculator</ProjectsH2>
-        //     <ProjectsP>
-        //       Summary: Simple calculator utilizing AngularJS. Showing junior
-        //       level software engineering qualities.
-        //     </ProjectsP>
-           
-        //   </ProjectsCard>
-        //   <ProjectsCard>
-        //     <ProjectsIcon src={Icon6} />
-        //     <ProjectsH2> TimeLine</ProjectsH2>
-        //     <ProjectsP>
-        //       Summary: TIme-Line application for Flatiron Final Project
-        //     </ProjectsP>
-            
-        //   </ProjectsCard> 
-        // </ProjectsWrapper> */}
       </ProjectsContainer>
     </div>
   );

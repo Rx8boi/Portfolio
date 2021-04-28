@@ -64,11 +64,12 @@ export const ProjectsCard = styled.div`
 export const ProjectsIcon = styled.img`
   height: 100px;
   width: 100px;
+  margin-right: 10px;
   margin-bottom: 10px;
-  
+  justify-content: center;
 
   @media screen and (max-width: 768px) {
- display: inline-flex;
+    display: inline-flex;
   }
 `;
 
@@ -96,12 +97,24 @@ export const ProjectsH2 = styled.div`
   
 `;
 export const ProjectsP = styled.div`
-  font-size: 1rem;
-  text-align: center;
+margin-top: 40px;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* align-items: center; */
+  grid-gap: 40px;
+  padding: 0 20px;
+`;
+export const ProjectsFooter = styled.div`
+position:relative;
+bottom: -5px;
+right: -640px;
+  max-width: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* align-items: center; */
 
-  @media screen and (max-width: 480px) {
-    font-size: 0.8rem;
-  }
+  padding: 0 20px;
 `;
 // export const ProjectsSubtitle = styled.div`
 // `
