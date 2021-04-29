@@ -21,26 +21,11 @@ export const ProjectsWrapper = styled.div`
 `;
 
 export const ProjectsCard = styled.div`
-  /* display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  border-radius: 10px;
-  max-height: 340px;
-  padding: 30px;
-  box-shadow: 5px 3px 13px rgba(0, 0, 0, 0.5);
-  transition: all 0.5s ease-in-out;
-  color: black;
-  background-color: rgba(248, 249, 249, 0.2);
-   */
-
-  /* width: 1000px;
-  height: 600px; */
   align-items: center;
   position: relative;
-  top: -30px;
+  top: -100px;
   max-width: 950px;
-  height: 70%;
+  height: 60%;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 5px 3px 13px rgba(0, 0, 0, 0.5);
@@ -53,10 +38,10 @@ export const ProjectsCard = styled.div`
     transition: all 0.5s ease-in-out;
   }
 
-  /* @media screen and (max-width: 768px) {
-    width: 600px;
+  @media screen and (max-width: 768px) {
+    max-width: 650px;
     max-height: 500px;
-  } */
+  }
 `;
 
 
@@ -69,7 +54,7 @@ export const ProjectsIcon = styled.img`
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    display: inline-flex;
+    display: none;
   }
 `;
 
@@ -106,15 +91,20 @@ margin-top: 40px;
   padding: 0 20px;
 `;
 export const ProjectsFooter = styled.div`
-position:relative;
-bottom: -5px;
-right: -640px;
-  max-width: 100px;
+  position: relative;
+  bottom: -38px;
+  left: 100px;
+  max-width: 200px;
+  min-width: 150px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* align-items: center; */
-
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  grid-gap: 1px;
   padding: 0 20px;
+
+  @media screen and (max-width: 768px) {
+    right: -230px;
+  }
 `;
 // export const ProjectsSubtitle = styled.div`
 // `

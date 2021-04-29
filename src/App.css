@@ -26,6 +26,8 @@
   user-select: none;
   padding: 8px;
   transition: all 0.5s ease-in-out;
+
+
 }
 
 .right-arrow:hover {

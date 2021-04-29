@@ -25,6 +25,7 @@ import ProjectsModal from "../ProjectsModal";
 import { ProjectData } from './Data'
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
 import { ReactComponent as GitLogo } from "../../assets/icons8-github.svg";
+import { ReactComponent as CodePenLogo } from "../../assets/languages/codepen.svg";
 
 
 
@@ -77,31 +78,48 @@ const Projects = ({ slides }) => {
                         <br></br>
                         <ProjectsP>
                           <iframe
-                            width="420"
-                            height="315"
+                            width="320"
+                            height="215"
                             src={slide.Vid}
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
                           ></iframe>
 
                           <div>
                             <h4>{slide.summary}</h4>
-                             <a href={slide.github}>
+                          </div>
+                          <div>
+                            <h3>Links:</h3>
+                            <br></br>
+                            <a href={slide.github}>
                               <GitLogo />
                             </a>
+                            <a href={slide.CodPen}>
+                              <CodePenLogo />
+                            </a>
+                          </div>
+                          <div>
+                            <h4>Specifications</h4>
+                            <br></br>
+                            <li>{slide.spec1}</li>
+                            <li>{slide.spec2}</li>
+                            <li>{slide.spec3}</li>
+                            <li>{slide.spec4}</li>
+                            <li>{slide.spec5}</li>
                           </div>
                         </ProjectsP>
                         <br></br>
+
                         <br></br>
                         <br></br>
                         <br></br>
-                        <br></br>
-                        <br></br>
-                          <hr></hr>
+                        <hr></hr>
                         <ProjectsFooter>
-                          
-                          <ProjectsIcon src={slide.imgA} />
-                          <ProjectsIcon src={slide.imgB} />
-                          <ProjectsIcon src={slide.imgC} />
                           <ProjectsIcon src={slide.imgD} />
+                          <ProjectsIcon src={slide.imgC} />
+                          <ProjectsIcon src={slide.imgB} />
+                          <ProjectsIcon src={slide.imgA} />
                         </ProjectsFooter>
                       </ProjectsCard>
                     )}
