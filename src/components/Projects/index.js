@@ -88,12 +88,13 @@ const Projects = ({ slides }) => {
                         <ProjectsP>
                           <ProjectVideo>
                             <iframe
+                              title="Project Demo"
                               width="320"
                               height="215"
                               src={slide.Vid}
-                              frameborder="0"
+                              
                               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowfullscreen
+                              
                             ></iframe>
                           </ProjectVideo>
 

@@ -19,7 +19,7 @@ const TimeLine = () => {
           </Header>
           <VerticalTimeline>
             {TimeLineData.map((data) => {
-              let iconData = <img src={data.icon} />
+              let iconData = <img src={data.icon} alt="icon"/>
               let showButton =
                 data.buttonText !== undefined &&
                 data.buttonText !== null &&
@@ -27,7 +27,7 @@ const TimeLine = () => {
 
               return (
                 <VerticalTimelineElement
-                  key={data.key}
+                  key={data.id}
                   date={data.date}
                   dateClassName="date"
                   iconStyle={data.iColor}

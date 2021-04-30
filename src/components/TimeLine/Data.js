@@ -5,7 +5,7 @@ let TimeLineData = [
     location: "El Paso, Tx",
     description:
       "Completed Bachelors of Science Degree in Microbiology with Minor in Chemistry. Took advanced biology classes as well as higher level Math instead of statistics track. Began looking for pre-medical experience.",
-    buttonText: "View Degree",
+    // buttonText: "View Degree",
     date: "August 2007 - December 2012",
     icon: require("../../assets/timelineLogos/8school.svg"),
     iColor: { background: "white" },
@@ -16,7 +16,7 @@ let TimeLineData = [
     location: "El Paso, Texas",
     description:
       "While continuing education, in free time started developing applications for homemade costumes and designing logos / websites with squarespace. For costumes mainly trial & error C++ coding & Arduino uno/mini applications.",
-    buttonText: "Example Video",
+    // buttonText: "Example Video",
     date: "August 2014 - December 2014",
     icon: require("../../assets/timelineLogos/important.svg"),
     iColor: { background: "black" },
@@ -47,9 +47,8 @@ let TimeLineData = [
     location: "Full-Time Online",
     description:
       "Full Stack Web development course focusing on programming fundamentals, Web Frameworks, Javascript & Front-end frameworks. Learned programming fundamentals with Ruby and moving on to Object oriented programming. Leading to oppurtuniteis with debugging and troubleshooting, Javascript, React, database querying with SQL and HTML & CSS.",
-    buttonText: "College Projects",
     date: "March 2020 - March 2021",
-    buttonText: "View Certificate",
+    // buttonText: "View Certificate",
     icon: require("../../assets/timelineLogos/8school.svg"),
 
     iColor: { background: "white" },

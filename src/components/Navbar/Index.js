@@ -54,14 +54,6 @@ const Navbar = ({ toggle }) => {
             <NavBtnLink to="/Resume" onMouseEnter={onHover} onMouseLeave={onHover}>
               {hover ? <AdvertisementLine /> : <AdvertisementFill />} Resume
             </NavBtnLink>
-
-            {/* <NavBtnLink
-              to="../../../public/Charles2021.pdf"
-              target="_blank"
-              download
-            >
-              <FileDownload /> Download
-            </NavBtnLink> */}
           </NavBtn>
         </NavbarContainer>
       </Nav>
