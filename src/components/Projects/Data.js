@@ -24,7 +24,6 @@ export const ProjectData = [
     imgD: require("../../assets/languages/Solid_white.svg"),
     Vid: "https://www.youtube.com/embed/pQKTdV-ldS0?start=75",
     github: "https://github.com/Rx8boi/videogame-cli",
-    CodPen: require("../../assets/languages/Solid_white.svg"),
     title: "Video Game Tracker CLI",
     summary:
       "Video Game Tracker CLI is a Ruby based project I created as part of the Flatiron curriculmn and was my real taste at software engineering. In this project along with familiarizing myself with ruby methods and basic OOP the application was my first attempt at web scrapping & fetch calls. Users can start the application and through interacting with commands see individual video games & their release dates. Other gems such as 'colorize' were used for styling",
@@ -42,7 +41,6 @@ export const ProjectData = [
     imgD: require("../../assets/languages/Solid_white.svg"),
     Vid: "https://www.youtube.com/embed/lBxg_WNawgE?start=43",
     github: "https://github.com/Rx8boi/sinatra-pro",
-    CodPen: require("../../assets/languages/Solid_white.svg"),
     title: "Marvel Movie Project",
     summary:
       "Utilizing Ruby's Sinatra gem, I created this project for all those that need to get started in the Marvel Cinematic Universe and would love to track their favorite (or all characters) journeys throughout the 10 year epic. It is here to help you chronologically follow the 20+ epic so far, journaling each character, each movie & plot twist along the way!",
@@ -60,7 +58,6 @@ export const ProjectData = [
     imgD: require("../../assets/languages/Solid_white.svg"),
     Vid: "https://www.youtube.com/embed/T1WV5JS1e0k?start=20",
     github: "https://github.com/Rx8boi/GameRateSwap",
-    CodPen: require("../../assets/languages/Solid_white.svg"),
     title: "GameRateSwap",
     summary:
       "An app designed for users to add platforms & their games. Then rate those based upon the level of difficulty. This application utilizes ROR framework, omniauth gem & Devise. This was apart of my Flatiron Curriculm where I had to cover specific objectives. ",
@@ -78,7 +75,6 @@ export const ProjectData = [
     imgD: require("../../assets/languages/Solid_white.svg"),
     Vid: "https://www.youtube.com/embed/WoswFHiY_Mo?start=51",
     github: "https://github.com/Rx8boi/GameRateSwap",
-    CodPen: require("../../assets/languages/Solid_white.svg"),
     title: "My Fantasy League: NBA",
     summary:
       "My Fantasy League: NBA is an application I designed for users to view teams & create/edit players to track. Users were able to interact with single paged application (SPA) & back-end API for full CRUD operations without page refresh. After initial functionality Bootstrap along with CSS to creat clean front-end look.",
@@ -114,7 +110,6 @@ export const ProjectData = [
     imgD: require("../../assets/languages/Solid_white.svg"),
     Vid: "https://www.youtube.com/embed/zzSF94QW1Wk?start=22",
     github: "https://github.com/Rx8boi/Timeline",
-    CodPen: require("../../assets/languages/Solid_white.svg"),
     title: "TimeLine",
     summary:
       "A single page application utilizing a vertical timeline for my Flatiron Final Project. Project was basis for portfolio project & user could add/delete Timeline entries as well as utilize state to increase the 'like counter' on each timeline card.",

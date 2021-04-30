@@ -4,23 +4,11 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { ReactComponent as WorkIcon } from "../../assets/timelineLogos/8work.svg";
-import { ReactComponent as SchoolIcon } from "../../assets/timelineLogos/8school.svg";
 
 import "react-vertical-timeline-component/style.min.css";
 import { Header, TImeLineContainer, TimeLineWrapper } from "./TimeLineElements";
-// import styled from "styled-components";
-
-// const Styles = styled.div`
-//   .ending {
-//     position: relative;
-//     bottom: 20px;
-//   }
-// `;
 
 const TimeLine = () => {
-  let workIconColor = { background: "#01bf71" };
-  let schoolIconColor = { background: "white" };
 
   return (
     <>
@@ -31,7 +19,7 @@ const TimeLine = () => {
           </Header>
           <VerticalTimeline>
             {TimeLineData.map((data) => {
-              let isWorkIcon = data.icon === "work";
+              let iconData = <img src={data.icon} />
               let showButton =
                 data.buttonText !== undefined &&
                 data.buttonText !== null &&
@@ -42,8 +30,8 @@ const TimeLine = () => {
                   key={data.key}
                   date={data.date}
                   dateClassName="date"
-                  iconStyle={isWorkIcon ? workIconColor : schoolIconColor}
-                  icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
+                  iconStyle={data.iColor}
+                  icon={iconData}
                 >
                   <h3 className="vertical-timeline-element-title">
                     {data.title}
@@ -54,10 +42,10 @@ const TimeLine = () => {
                   <p id="description">{data.description}</p>
                   {showButton && (
                     <a
-                      className={`button ${
-                        isWorkIcon ? "workButton" : "schoolButton"
-                      }`}
-                      href="/"
+                      className={`button`}
+                      href={data.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       {data.buttonText}
                     </a>

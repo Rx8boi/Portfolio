@@ -7,27 +7,16 @@ import {
   ProjectsP,
   ProjectsIcon,
   SlidesSection,
-  ProjectsFooter
+  ProjectsFooter,
+  ProjectVideo,
 } from "./ProjectsElements";
 
-import Icon0 from "../../assets/languages/c-logo.svg";
-import Icon1 from "../../assets/languages/arduino.svg";
-import Icon9 from "../../assets/timelineLogos/important.svg";
-import Icon2 from "../../assets/timelineLogos/important.svg";
-import Icon3 from "../../assets/timelineLogos/important.svg";
-import Icon4 from "../../assets/timelineLogos/important.svg";
-import Icon5 from "../../assets/timelineLogos/important.svg";
-import Icon6 from "../../assets/timelineLogos/important.svg";
-import Modal from 'react-bootstrap/Modal'
-import { useState } from 'react';
-import { Button } from 'react-bootstrap';
-import ProjectsModal from "../ProjectsModal";
-import { ProjectData } from './Data'
-import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
+import { useState } from "react";
+import { ProjectData } from "./Data";
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import { ReactComponent as GitLogo } from "../../assets/icons8-github.svg";
+import { ReactComponent as YouTubeLogo } from "../../assets/icons8-youtube.svg";
 import { ReactComponent as CodePenLogo } from "../../assets/languages/codepen.svg";
-
-
 
 const Projects = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -65,6 +54,20 @@ const Projects = ({ slides }) => {
                 onClick={nextProject}
               />
               {ProjectData.map((slide, index) => {
+                let showGithub =
+                  slide.github !== undefined &&
+                  slide.github !== null &&
+                  slide.github !== "";
+
+                let showCodePen =
+                  slide.CodPen !== undefined &&
+                  slide.CodPen !== null &&
+                  slide.CodPen !== "";
+                let showYouTube =
+                  slide.Vid !== undefined &&
+                  slide.Vid !== null &&
+                  slide.Vid !== "";
+                
                 return (
                   <div
                     className={index === current ? "slide active" : "slide"}
@@ -77,14 +80,16 @@ const Projects = ({ slides }) => {
                         <hr></hr>
                         <br></br>
                         <ProjectsP>
-                          <iframe
-                            width="320"
-                            height="215"
-                            src={slide.Vid}
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                          ></iframe>
+                          <ProjectVideo>
+                            <iframe
+                              width="320"
+                              height="215"
+                              src={slide.Vid}
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowfullscreen
+                            ></iframe>
+                          </ProjectVideo>
 
                           <div>
                             <h4>{slide.summary}</h4>
@@ -92,12 +97,21 @@ const Projects = ({ slides }) => {
                           <div>
                             <h3>Links:</h3>
                             <br></br>
-                            <a href={slide.github}>
-                              <GitLogo />
-                            </a>
-                            <a href={slide.CodPen}>
-                              <CodePenLogo />
-                            </a>
+                            {showGithub && (
+                              <a href={slide.github}>
+                                <GitLogo />
+                              </a>
+                            )}
+                            {showCodePen && (
+                              <a href={slide.CodPen}>
+                                <CodePenLogo />
+                              </a>
+                            )}
+                            {showYouTube && (
+                              <a href={slide.Vid}>
+                                <YouTubeLogo />
+                              </a>
+                            )}
                           </div>
                           <div>
                             <h4>Specifications</h4>
