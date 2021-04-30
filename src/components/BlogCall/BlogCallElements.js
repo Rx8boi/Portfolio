@@ -66,7 +66,8 @@ export const BlogCallWrapper = styled.div`
     padding: 0 20px;
     margin-bottom: 70px;
     grid-gap: 7px;
-    /* background-color: red; */
+    background-color: black;
+    height: 1780px;
   }
 `;
 

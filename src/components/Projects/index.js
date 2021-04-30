@@ -75,6 +75,12 @@ const Projects = ({ slides }) => {
                   >
                     {index === current && (
                       <ProjectsCard>
+                        <ProjectsFooter>
+                          <ProjectsIcon src={slide.imgA} />
+                          <ProjectsIcon src={slide.imgB} />
+                          <ProjectsIcon src={slide.imgC} />
+                          <ProjectsIcon src={slide.imgD} />
+                        </ProjectsFooter>
                         <h3>{slide.title}</h3>
                         <br></br>
                         <hr></hr>
@@ -121,20 +127,10 @@ const Projects = ({ slides }) => {
                             <li>{slide.spec3}</li>
                             <li>{slide.spec4}</li>
                             <li>{slide.spec5}</li>
+                            <br></br>
                           </div>
                         </ProjectsP>
-                        <br></br>
-
-                        <br></br>
-                        <br></br>
-                        <br></br>
                         <hr></hr>
-                        <ProjectsFooter>
-                          <ProjectsIcon src={slide.imgD} />
-                          <ProjectsIcon src={slide.imgC} />
-                          <ProjectsIcon src={slide.imgB} />
-                          <ProjectsIcon src={slide.imgA} />
-                        </ProjectsFooter>
                       </ProjectsCard>
                     )}
                   </div>
