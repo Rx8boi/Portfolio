@@ -92,9 +92,7 @@ const Projects = ({ slides }) => {
                               width="320"
                               height="215"
                               src={slide.Vid}
-                              
                               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              
                             ></iframe>
                           </ProjectVideo>
 
@@ -105,12 +103,20 @@ const Projects = ({ slides }) => {
                             <h3>Links:</h3>
                             <br></br>
                             {showGithub && (
-                              <a href={slide.github}>
+                              <a
+                                href={slide.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
                                 <GitLogo />
                               </a>
                             )}
                             {showCodePen && (
-                              <a href={slide.CodPen}>
+                              <a
+                                href={slide.CodPen}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
                                 <CodePenLogo />
                               </a>
                             )}

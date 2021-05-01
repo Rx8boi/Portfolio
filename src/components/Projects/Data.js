@@ -74,8 +74,8 @@ export const ProjectData = [
     imgB: require("../../assets/languages/html5.svg"),
     imgC: require("../../assets/languages/css.svg"),
     imgD: require("../../assets/languages/Solid_white.svg"),
-    Vid: "https://www.youtube.com/embed/WoswFHiY_Mo?start=51",
-    github: "https://github.com/Rx8boi/GameRateSwap",
+    Vid: "https://www.youtube.com/embed/7ClYwI9zhOI",
+    github: "https://github.com/Rx8boi/My-Fantasy-League",
     title: "My Fantasy League: NBA",
     summary:
       "My Fantasy League: NBA is an application I designed for users to view teams & create/edit players to track. Users were able to interact with single paged application (SPA) & back-end API for full CRUD operations without page refresh. After initial functionality Bootstrap along with CSS to creat clean front-end look.",
@@ -91,9 +91,9 @@ export const ProjectData = [
     imgB: require("../../assets/languages/html5.svg"),
     imgC: require("../../assets/languages/css.svg"),
     imgD: require("../../assets/languages/Solid_white.svg"),
-    Vid: "https://www.youtube.com/embed/tgbNymZ7vqYcontrols=0",
-    github: "https://github.com/Rx8boi/GameRateSwap",
-    CodPen: require("../../assets/languages/Solid_white.svg"),
+    Vid: "https://www.youtube.com/embed/JSSnHmjEtF8",
+    github: "https://github.com/Rx8boi/GoodLookingCal",
+    CodPen: "https://codepen.io/rx8boi/pen/gOgNGEm",
     title: "A Good Calculator",
     summary:
       "Simple calculator utilizing AngularJS, HTML5 & CSS. Showing junior level software engineering qualities.",
