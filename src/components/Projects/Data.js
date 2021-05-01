@@ -23,16 +23,16 @@ export const ProjectData = [
     imgB: require("../../assets/languages/Solid_white.svg"),
     imgC: require("../../assets/languages/Solid_white.svg"),
     imgD: require("../../assets/languages/Solid_white.svg"),
-    Vid: "https://www.youtube.com/embed/pQKTdV-ldS0?start=75",
+    Vid: "https://www.youtube.com/embed/FycsJoDGflc",
     github: "https://github.com/Rx8boi/videogame-cli",
     title: "Video Game Tracker CLI",
     summary:
       "Video Game Tracker CLI is a Ruby based project I created as part of the Flatiron curriculmn and was my real taste at software engineering. In this project along with familiarizing myself with ruby methods and basic OOP the application was my first attempt at web scrapping & fetch calls. Users can start the application and through interacting with commands see individual video games & their release dates. Other gems such as 'colorize' were used for styling",
-    spec1: "Rails Framework",
-    spec2: "MVC design & RESTful API",
-    spec3: "Devise gem & custom views for user auth",
-    spec4: "Omniauth gem for service log in/signup",
-    spec5: "Boostrap for custom navigation bar",
+    spec1: "Ruby Object Oriented Application",
+    spec2: "CLI provides access to data from webpage",
+    spec3: "Data provided goes 1 level deep",
+    spec4: "Utilized Colorize gem for styling",
+    spec5: "Utilized good OO design (collection of objects)",
   },
   {
     index: 3,
@@ -45,11 +45,11 @@ export const ProjectData = [
     title: "Marvel Movie Project",
     summary:
       "Utilizing Ruby's Sinatra gem, I created this project for all those that need to get started in the Marvel Cinematic Universe and would love to track their favorite (or all characters) journeys throughout the 10 year epic. It is here to help you chronologically follow the 20+ epic so far, journaling each character, each movie & plot twist along the way!",
-    spec1: "Rails Framework",
+    spec1: "Utilized ActiveRecord with Sinatra",
     spec2: "MVC design & RESTful API",
-    spec3: "Devise gem & custom views for user auth",
-    spec4: "Omniauth gem for service log in/signup",
-    spec5: "Boostrap for custom navigation bar",
+    spec3: "Emphasis on has_many & belongs_to relationships",
+    spec4: "Validate uniqueness of user login attributes",
+    spec5: "Validate user input to avoid bad data persistence",
   },
   {
     index: 4,
@@ -57,7 +57,7 @@ export const ProjectData = [
     imgB: require("../../assets/languages/html5.svg"),
     imgC: require("../../assets/languages/css.svg"),
     imgD: require("../../assets/languages/Solid_white.svg"),
-    Vid: "https://www.youtube.com/embed/T1WV5JS1e0k?start=20",
+    Vid: "https://www.youtube.com/embed/As3MBNJ_tPw",
     github: "https://github.com/Rx8boi/GameRateSwap",
     title: "GameRateSwap",
     summary:
@@ -79,11 +79,12 @@ export const ProjectData = [
     title: "My Fantasy League: NBA",
     summary:
       "My Fantasy League: NBA is an application I designed for users to view teams & create/edit players to track. Users were able to interact with single paged application (SPA) & back-end API for full CRUD operations without page refresh. After initial functionality Bootstrap along with CSS to creat clean front-end look.",
-    spec1: "Rails Framework",
+    spec1: "HTML, CSS & JavaScript frontend w/ Rails API",
     spec2: "MVC design & RESTful API",
-    spec3: "Devise gem & custom views for user auth",
-    spec4: "Omniauth gem for service log in/signup",
-    spec5: "Boostrap for custom navigation bar",
+    spec3:
+      "Client & server interactions handled asynchronously (AJAX) and use JSON",
+    spec4: "Object Oriented JavaScript encapsulates related data and behavior.",
+    spec5: "Utilizes 4 AJAX calls Create, Read, Update & Delete",
   },
   {
     index: 6,
@@ -97,11 +98,12 @@ export const ProjectData = [
     title: "A Good Calculator",
     summary:
       "Simple calculator utilizing AngularJS, HTML5 & CSS. Showing junior level software engineering qualities.",
-    spec1: "Rails Framework",
-    spec2: "MVC design & RESTful API",
-    spec3: "Devise gem & custom views for user auth",
-    spec4: "Omniauth gem for service log in/signup",
-    spec5: "Boostrap for custom navigation bar",
+    spec1: "AngularJS Framework",
+    spec2: "Single Page Application",
+    spec3:
+      "Operators include: Addition, Subtraction, Multiplication, Division & Percentage",
+    spec4: "Custom CSS styling",
+    spec5: "First exposure to Angular",
   },
   {
     index: 7,
@@ -109,7 +111,7 @@ export const ProjectData = [
     imgB: require("../../assets/languages/redux.svg"),
     imgC: require("../../assets/languages/html5.svg"),
     imgD: require("../../assets/languages/css.svg"),
-    Vid: "https://www.youtube.com/embed/zzSF94QW1Wk?start=22",
+    Vid: "https://www.youtube.com/embed/mHMI6-DwyME",
     github: "https://github.com/Rx8boi/Timeline",
     title: "TimeLine",
     summary:
