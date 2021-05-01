@@ -6,7 +6,6 @@ export const ProjectData = [
     imgC: require("../../assets/languages/Solid_white.svg"),
     imgD: require("../../assets/languages/Solid_white.svg"),
     Vid: "https://www.youtube.com/embed/VjzSb-KAFuc",
-    CodPen: require("../../assets/languages/Solid_white.svg"),
     title: "Carbon Fiber Iron Man Helmet",
     summary:
       "My first venture into programming and the software engineering world. Creating a War Machine cosplay suit brought me to look into ways of automating the helmet & upon close, light up the LEDs in a specific way. When user pushes button to open faceplate, LEDs should turn off. This solution was solved with C++ Arduino uno programming and the helmet itself was created with carbon fiber & resin.",
