@@ -77,7 +77,7 @@ export const ProjectData = [
     github: "https://github.com/Rx8boi/My-Fantasy-League",
     title: "My Fantasy League: NBA",
     summary:
-      "My Fantasy League: NBA is an application I designed for users to view teams & create/edit players to track. Users were able to interact with single paged application (SPA) & back-end API for full CRUD operations without page refresh. After initial functionality Bootstrap along with CSS to creat clean front-end look.",
+      "My Fantasy League: NBA is an application I designed for users to view teams & create/edit players to track. Users were able to interact with single paged application (SPA) & back-end API for full CRUD operations without page refresh. After initial functionality Bootstrap along with CSS to create clean front-end look.",
     spec1: "HTML, CSS & JavaScript frontend w/ Rails API",
     spec2: "MVC design & RESTful API",
     spec3:
