@@ -56,11 +56,9 @@ const Footer = () => {
               <SocialLogo2 />
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>Contact Me</FooterLinkTitle>
-            
-            
-                <LFooter />
-              
+              <FooterLinkTitle>Hosted With:</FooterLinkTitle>
+              <FooterLink to="/Resume">CPanel</FooterLink>
+              <FooterLink to="/Resume">GoDaddy.com</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>

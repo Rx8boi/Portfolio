@@ -27,24 +27,27 @@ display: flex;
 
 @media screen and (max-width: 820px) {
     flex-direction: column;
+    align-items: center;
 }
 `
 export const FooterLinkItems = styled.div`
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-margin: 16px;
-text-align: left;
-width: 160px;
-box-sizing: border-box;
-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 16px;
+  text-align: left;
+  width: 160px;
+  box-sizing: border-box;
+  color: #fff;
 
-@media screen and (max-width: 420px) {
+  @media screen and (max-width: 768px) {
     margin: 0;
     padding: 10px;
     width: 100%;
-}
-`
+    align-items: center;
+    text-align: center;
+  }
+`;
 export const FooterLinkTitle = styled.h1`
 font-size: 16px;
 margin-bottom: 16px;

@@ -30,6 +30,20 @@
 
 }
 
+@media only screen and (max-width: 768px) {
+.right-arrow {
+  top: 97%;
+}
+
+}
+
+@media only screen and (max-width: 1024px) {
+.right-arrow {
+  top: 78%;
+}
+
+}
+
 .right-arrow:hover {
   transform: scale(1.13);
   transition: all 0.9s ease-in-out;
@@ -49,6 +63,19 @@
   padding: 8px;
   
   transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+.left-arrow {
+  top: 97%;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+.left-arrow {
+  top: 78%;
+}
+
 }
 
 .left-arrow:hover {
