@@ -30,16 +30,17 @@
 
 }
 
+
+@media only screen and (max-width: 1024px) {
+  .right-arrow {
+    top: 78%;
+  }
+  
+}
+
 @media only screen and (max-width: 768px) {
 .right-arrow {
   top: 97%;
-}
-
-}
-
-@media only screen and (max-width: 1024px) {
-.right-arrow {
-  top: 78%;
 }
 
 }
@@ -65,17 +66,19 @@
   transition: all 0.5s ease-in-out;
 }
 
+
+@media only screen and (max-width: 1024px) {
+  .left-arrow {
+    top: 78%;
+  }
+  
+}
+
 @media only screen and (max-width: 768px) {
 .left-arrow {
   top: 97%;
+  left: 40px;
 }
-}
-
-@media only screen and (max-width: 1024px) {
-.left-arrow {
-  top: 78%;
-}
-
 }
 
 .left-arrow:hover {

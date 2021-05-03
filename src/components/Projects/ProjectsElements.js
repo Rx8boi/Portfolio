@@ -22,7 +22,7 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const ProjectsWrapper = styled.div`
-  max-width: 100%;
+  max-width: 98%;
   max-height: 100%;
   margin: 0 auto;
   align-items: center;
@@ -123,7 +123,7 @@ export const ProjectsP = styled.div`
 
   @media screen and (max-width: 600px) {
     grid-template-columns: 1fr;
-    overflow: scroll;
+   
     font-size: 1.2vh;
   }
 `;
@@ -145,14 +145,6 @@ export const ProjectsFooter = styled.div`
     right: -20px;
   }
 `;
-// export const ProjectsSubtitle = styled.div`
-// `
 
 export const SlidesSection = styled.div`
- /* position: relative;
- height: 100vh;
- display: flex;
- justify-content: center;
- align-items: center; */
-
 `;
