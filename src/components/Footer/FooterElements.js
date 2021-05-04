@@ -63,7 +63,7 @@ export const FooterLinkTitle2 = styled.h1`
     margin-left: 0px;
   }
 `;
-export const FooterLink = styled(Link)`
+export const FooterLink = styled.a`
   color: #fff;
   text-decoration: none;
   margin-bottom: 0.5rem;

@@ -13,12 +13,11 @@ import {
   WebsiteRights,
   SocialIcons,
   SocialLogo,
-  SocialIconLink, ReactSvg
+  SocialIconLink,
+  ReactSvg,
 } from "./FooterElements";
-import LFooter from "../LottieFooter";
 import SocialLogo2 from "../Svg";
 import { FaYoutube, FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
-
 
 const Footer = () => {
   return (
@@ -33,12 +32,48 @@ const Footer = () => {
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>Built With</FooterLinkTitle>
-              <FooterLink to="/">ReactJs</FooterLink>
-              <FooterLink to="/">ReactRouter</FooterLink>
-              <FooterLink to="/Resume">React Icons</FooterLink>
-              <FooterLink to="/Resume">React Timeline</FooterLink>
-              <FooterLink to="/Resume">React Scroll</FooterLink>
-              <FooterLink to="/Resume">Stylized Components</FooterLink>
+              <FooterLink
+                href="https://reactjs.org/docs/getting-started.html"
+                target="_blank"
+                aria-label="ReactJs"
+              >
+                ReactJs
+              </FooterLink>
+              <FooterLink
+                href="https://reactrouter.com/"
+                target="_blank"
+                aria-label="React Router"
+              >
+                ReactRouter
+              </FooterLink>
+              <FooterLink
+                href="https://react-icons.github.io/react-icons/"
+                target="_blank"
+                aria-label="React Icons"
+              >
+                React Icons
+              </FooterLink>
+              <FooterLink
+                href="https://www.npmjs.com/package/react-vertical-timeline-component"
+                target="_blank"
+                aria-label="React Vertical Timeline Component"
+              >
+                React Vertical Timeline
+              </FooterLink>
+              <FooterLink
+                href="https://www.npmjs.com/package/react-scroll"
+                target="_blank"
+                aria-label="React Scroll"
+              >
+                React Scroll
+              </FooterLink>
+              <FooterLink
+                href="https://styled-components.com/"
+                target="_blank"
+                aria-label="Styled Components"
+              >
+                Styled Components
+              </FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>Featured Media</FooterLinkTitle>
@@ -48,39 +83,45 @@ const Footer = () => {
               >
                 Indeed Snippet
               </FooterLink>
-              <FooterLink to="/Resume">Speed Therapy</FooterLink>
-              <FooterLink to="/Resume">Media</FooterLink>
+              <FooterLink target="_blank" href="https://youtu.be/cQDkGdtMu-E">
+                Speed Therapy
+              </FooterLink>
+              <FooterLink to="/Resume">Other Media</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle2>Dev Links</FooterLinkTitle2>
               <SocialLogo2 />
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>Hosted With:</FooterLinkTitle>
-              <FooterLink to="/Resume">CPanel</FooterLink>
-              <FooterLink to="/Resume">GoDaddy.com</FooterLink>
+              <FooterLinkTitle>Hosted With</FooterLinkTitle>
+              <FooterLink target="_blank" href="https://cpanel.net/">
+                CPanel
+              </FooterLink>
+              <FooterLink target="_blank" href="https://www.godaddy.com/">
+                GoDaddy.com
+              </FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to="/">gitCharles.com</SocialLogo>
-            <WebsiteRights>
-              © {new Date().getFullYear()} All rights reserved.
+            <WebsiteRights> 
+              © {new Date().getFullYear()} All rights reserved. v1.2
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink
-                href="//www.facebook.com"
+                href="https://www.facebook.com/charlesbutler8"
                 target="_blank"
-                aria-label="Facebook"
+                aria-label="Charles' Facebook"
               >
                 <FaFacebook />
               </SocialIconLink>
 
               <SocialIconLink
-                href="//www.instagram.com"
+                href="https://www.instagram.com/charles.atx/"
                 target="_blank"
-                aria-label="Instagram"
+                aria-label="Charles' Instagram"
               >
                 <FaInstagram />
               </SocialIconLink>
