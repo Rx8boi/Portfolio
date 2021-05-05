@@ -30,7 +30,6 @@ export const ContactWrapper = styled.div`
 
 export const ContactHeader = styled.h1`
   color: black;
-  
   font-family: "Menlo", sans-serif;
   font-size: 1.8rem;
   line-height: 16px;
@@ -51,10 +50,60 @@ export const ContactHeader = styled.h1`
   }
 `;
 
-export const ContactInfo = styled.div``;
+export const ContactInfo = styled.div`
+  margin-top: 40px;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* align-items: center; */
+  grid-gap: 50px;
+  padding: 0 20px;
+  font-size: 1.4vh;
 
-export const ContactLanguages = styled.div``;
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
 
-export const ContactPref = styled.div``;
+    font-size: 1.2vh;
+  }
+`;
+
+export const ContactLanguages = styled.div`
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 95%;
+  margin-left: 18px;
+  margin-right: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 3px 13px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+  color: black;
+  background-color: rgba(248, 249, 249, 0.2);
+
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.5s ease-in-out;
+  }
+
+  @media screen and (max-width: 1024px) {
+    height: 60%;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 650px;
+    height: 750px;
+  }
+
+  @media screen and (max-width: 600px) {
+    max-height: 80%;
+  } ;
+`;
+
+export const ContactPref = styled.div`
+  position: relative;
+  width: 100%;
+  height: 90%;
+`;
 
 export const ContactFooter = styled.div``;
