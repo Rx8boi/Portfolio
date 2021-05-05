@@ -11,10 +11,10 @@ import {
 
 const Contact = () => {
   return (
-    <>
+    <div id="Contact">
       <ContactContainer>
-        <ContactWrapper id="Contact">
-          <ContactHeader> </ContactHeader>
+        <ContactWrapper>
+          <ContactHeader>Contact</ContactHeader>
           <ContactInfo>
             <ContactLanguages></ContactLanguages>
             <ContactPref></ContactPref>
@@ -22,7 +22,7 @@ const Contact = () => {
           <ContactFooter></ContactFooter>
         </ContactWrapper>
       </ContactContainer>
-    </>
+    </div>
   );
 };
 
