@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-  height: 1350px;
+  height: 1000px;
   display: justify;
   flex-direction: column;
   justify-content: center;
@@ -21,7 +21,7 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactWrapper = styled.div`
-  max-width: 98%;
+  max-width: 95%;
   max-height: 100%;
   margin: 0 auto;
   align-items: center;
@@ -38,7 +38,7 @@ export const ContactHeader = styled.h1`
   text-transform: uppercase;
   text-decoration: none;
   padding-top: 100px;
-  /* padding-bottom: 10px; */
+  padding-bottom: 30px;
 
   @media screen and (max-width: 768px) {
     /* padding-bottom: 10px; */
@@ -52,7 +52,7 @@ export const ContactHeader = styled.h1`
 
 export const ContactInfo = styled.div`
   margin-top: 40px;
-  max-width: 900px;
+  max-width: 1500px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* align-items: center; */
@@ -62,13 +62,14 @@ export const ContactInfo = styled.div`
 
   @media screen and (max-width: 600px) {
     grid-template-columns: 1fr;
-
     font-size: 1.2vh;
   }
 `;
 
 export const ContactLanguages = styled.div`
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   width: 100%;
   height: 95%;
@@ -78,8 +79,15 @@ export const ContactLanguages = styled.div`
   border-radius: 10px;
   box-shadow: 5px 3px 13px rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease-in-out;
-  color: black;
   background-color: rgba(248, 249, 249, 0.2);
+  color: black;
+  font-family: "Menlo", sans-serif;
+  font-size: .8rem;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  text-decoration: none;
 
   &:hover {
     transform: scale(1.02);
@@ -102,8 +110,17 @@ export const ContactLanguages = styled.div`
 
 export const ContactPref = styled.div`
   position: relative;
+  padding-top: 80px;
   width: 100%;
   height: 90%;
+  color: black;
+  font-family: "Menlo", sans-serif;
+  font-size: 1.2rem;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  text-decoration: none;
 `;
 
 export const ContactFooter = styled.div``;
