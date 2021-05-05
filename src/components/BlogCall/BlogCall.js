@@ -36,7 +36,7 @@ export class BlogCall extends Component {
         const avatar = data.data.feed.image;
         const profileLink = data.data.feed.link;
         const res = data.data.items; //This is an array with the content. No feed, no info about author etc..
-        const posts = res.filter((item) => item.categories.length > 0);
+        const posts = res.filter((item) => item.categories.length >= 0);
 
         const title = data.data.feed.title;
 
@@ -56,6 +56,7 @@ export class BlogCall extends Component {
           }
         );
         console.log(data, res);
+        console.log(res)
       })
       ;
   }
