@@ -12,6 +12,7 @@ import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import BlogCall from "../components/BlogCall/BlogCall";
 import { ProjectData } from "../components/Projects/Data";
+import Contact from '../components/Contact'
 
 const Home = () => {
   //variable ->
@@ -28,6 +29,7 @@ const Home = () => {
       <TimeLine />
       <Projects slides={ProjectData}/>
       <BlogCall />
+      <Contact />
       <Footer />
       
     </>
