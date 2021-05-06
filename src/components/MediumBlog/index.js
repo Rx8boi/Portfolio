@@ -1,7 +1,7 @@
 import React from "react";
 import c from "./MediumBlog.module.css";
 import moment from "moment";
-import { Link, withRouter } from "react-router-dom";
+import {  withRouter } from "react-router-dom";
 import ToText from "../ToText";
 
 const MediumBlog = (props, p) => {
@@ -15,8 +15,8 @@ const MediumBlog = (props, p) => {
           <div className={c.authorimg}>
             <a
               href={props.profileurl}
-              rel="noopener noreferrer"
               target="_blank"
+              rel="noopener noreferrer"
               style={{ backgroundImage: `url(${props.avtar})` }}
             >
               Written By Charles
@@ -28,6 +28,7 @@ const MediumBlog = (props, p) => {
           <h5 className="card-title">
             <a
               href="https://cdbutle.medium.com/"
+              rel="noopener noreferrer"
               target="_blank"
               aria-label="Medium blog"
               className={c.textfiordblue}

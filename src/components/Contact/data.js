@@ -1,8 +1,7 @@
 let ContactLang = [
   {
     id: 1,
-        icon: require("../../assets/languages/ruby.svg"),
-    
+    icon: require("../../assets/languages/ruby.svg"),
   },
   {
     id: 2,
@@ -34,13 +33,12 @@ let ContactLang = [
     id: 10,
     icon: require("../../assets/languages/icons8-postgresql.svg"),
   },
-
   {
-    id: 12,
+    id: 11,
     icon: require("../../assets/languages/sql.png"),
   },
   {
-    id: 13,
+    id: 12,
     icon: require("../../assets/languages/icons8-mongodb.svg"),
   },
   {
@@ -53,19 +51,35 @@ let ContactLang = [
   },
   {
     id: 16,
-    icon: require("../../assets/languages/html5.svg"),
+    icon: require("../../assets/languages/grunt.svg"),
   },
   {
     id: 17,
-    icon: require("../../assets/languages/css.svg"),
+    icon: require("../../assets/languages/vscode.svg"),
   },
   {
     id: 18,
-    icon: require("../../assets/languages/cpanel.svg"),
+    icon: require("../../assets/languages/html5.svg"),
   },
   {
     id: 19,
+    icon: require("../../assets/languages/css.svg"),
+  },
+  {
+    id: 20,
+    icon: require("../../assets/languages/cpanel.svg"),
+  },
+  {
+    id: 21,
     icon: require("../../assets/languages/git-icon.png"),
+  },
+  {
+    id: 22,
+    icon: require("../../assets/languages/icons8-adobe_photoshop.svg"),
+  },
+  {
+    id: 23,
+    icon: require("../../assets/languages/icons8-adobe_premiere_pro.svg"),
   },
 ];
 

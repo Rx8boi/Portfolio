@@ -5,8 +5,8 @@ export const ContactContainer = styled.div`
   display: justify;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
   background-color: white;
+  margin-top: 20px;
 
   @media screen and (max-width: 1024px) {
     height: 1500px;
@@ -56,7 +56,7 @@ export const ContactInfo = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* align-items: center; */
-  grid-gap: 50px;
+  grid-gap: 60px;
   padding: 0 20px;
   font-size: 1.4vh;
 
@@ -110,36 +110,59 @@ export const ContactLanguages = styled.div`
 
 export const ContactLanguagesWrapper = styled.div`
 padding: 20px;
+padding-left: 45px;
+padding-right: 5px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  
 `;
 
 export const ContactLanguagesIcon = styled.img`
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   margin-right: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   justify-content: center;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    transform: scale(1.4);
+    transition: all 0.5s ease-in-out;
+  }
 `;
 
 export const ContactLanguagesFooter = styled.div`
   position: relative;
-  bottom: -1px;
+  bottom: 0px;
 `;
 
 export const ContactPref = styled.div`
   position: relative;
-  padding-top: 80px;
+  padding-top: 60px;
+
   width: 100%;
   height: 90%;
   color: black;
   font-family: "Menlo", sans-serif;
   font-size: 1.2rem;
-  line-height: 16px;
+  line-height: 17px;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   text-decoration: none;
 `;
 
-export const ContactFooter = styled.div``;
+export const ContactPrefFooter = styled.div`
+text-align: center;
+padding-left: 25px;
+width: 80%;
+`;
+
+export const ContactFooter = styled.div`
+margin-top: 20px;
+margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+`;
+

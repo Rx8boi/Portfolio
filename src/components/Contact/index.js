@@ -4,16 +4,17 @@ import {
   ContactWrapper,
   ContactHeader,
   ContactInfo,
-    ContactLanguages,
-    ContactLanguagesIcon,
-    ContactLanguagesWrapper,
+  ContactLanguages,
+  ContactLanguagesIcon,
+  ContactLanguagesWrapper,
   ContactLanguagesFooter,
-  ContactPref,
+    ContactPref,
+  ContactPrefFooter,
   ContactFooter,
 } from "./ContactElements";
-import  ContactLang from './data'
-
-
+import ContactLang from "./data";
+import { FaLinkedin } from "react-icons/fa";
+import { BiMailSend } from "react-icons/bi";
 
 const Contact = () => {
   return (
@@ -23,25 +24,55 @@ const Contact = () => {
           <ContactHeader>Contact</ContactHeader>
           <ContactInfo>
             <ContactLanguages>
-              <h2> Languages / Platforms </h2>
+              <h2> Languages & Proficiencies </h2>
               <hr />
               <ContactLanguagesWrapper>
-                              {ContactLang.map((data) => {
-                                  return (
-                                  <ContactLanguagesIcon src={data.icon} />)
-                              })}
-                 
+                {ContactLang.map((data) => {
+                  return <ContactLanguagesIcon src={data.icon} />;
+                })}
               </ContactLanguagesWrapper>
-              <br />
+
               <ContactLanguagesFooter>
                 <hr />
               </ContactLanguagesFooter>
             </ContactLanguages>
             <ContactPref>
-              This is my preference of stuff i want just words
+              <h2>Currently Seeking JR Role in:</h2>
+              <br />
+              <hr />
+              <br />
+              <li>Front End Software Engineering</li>
+              <br />
+              <li>Back End Software Engineering</li>
+              <br />
+              <li>Full Stack Software Engineering</li>
+              <br />
+              <li>Software Development</li>
+              <br />
+              <li>Software Development Engineer in Test (SDET)</li>
+              <br />
+              <br />
+              <br />
+              <ContactPrefFooter>
+                <h3>Located In Austin, TX</h3>
+                <br />
+                <h3>Open to Remote work</h3>
+                <br />
+                <hr />
+              </ContactPrefFooter>
             </ContactPref>
           </ContactInfo>
-          <ContactFooter></ContactFooter>
+          <ContactFooter>
+            <h2>
+              Feel free to reach out through LinkedIn{" "}
+              <a href="https://www.linkedin.com/in/charlesbutlerjr">
+                <FaLinkedin />
+              </a> or email
+              <a href="mailto:cdbutle@outlook.com">
+                <BiMailSend />
+              </a>
+            </h2>
+          </ContactFooter>
         </ContactWrapper>
       </ContactContainer>
     </div>
