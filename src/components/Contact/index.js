@@ -4,10 +4,16 @@ import {
   ContactWrapper,
   ContactHeader,
   ContactInfo,
-  ContactLanguages,
+    ContactLanguages,
+    ContactLanguagesIcon,
+    ContactLanguagesWrapper,
+  ContactLanguagesFooter,
   ContactPref,
   ContactFooter,
 } from "./ContactElements";
+import  ContactLang from './data'
+
+
 
 const Contact = () => {
   return (
@@ -17,12 +23,22 @@ const Contact = () => {
           <ContactHeader>Contact</ContactHeader>
           <ContactInfo>
             <ContactLanguages>
-                          <h2> Languages & Platforms </h2> 
-                          <hr />
-              Here are the languages i use box area card
+              <h2> Languages / Platforms </h2>
+              <hr />
+              <ContactLanguagesWrapper>
+                              {ContactLang.map((data) => {
+                                  return (
+                                  <ContactLanguagesIcon src={data.icon} />)
+                              })}
+                 
+              </ContactLanguagesWrapper>
+              <br />
+              <ContactLanguagesFooter>
+                <hr />
+              </ContactLanguagesFooter>
             </ContactLanguages>
             <ContactPref>
-               This is my preference of stuff i want just words
+              This is my preference of stuff i want just words
             </ContactPref>
           </ContactInfo>
           <ContactFooter></ContactFooter>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-  height: 1000px;
+  height: 800px;
   display: justify;
   flex-direction: column;
   justify-content: center;
@@ -82,7 +82,7 @@ export const ContactLanguages = styled.div`
   background-color: rgba(248, 249, 249, 0.2);
   color: black;
   font-family: "Menlo", sans-serif;
-  font-size: .8rem;
+  font-size: 0.8rem;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
@@ -106,6 +106,25 @@ export const ContactLanguages = styled.div`
   @media screen and (max-width: 600px) {
     max-height: 80%;
   } ;
+`;
+
+export const ContactLanguagesWrapper = styled.div`
+padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+`;
+
+export const ContactLanguagesIcon = styled.img`
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+`;
+
+export const ContactLanguagesFooter = styled.div`
+  position: relative;
+  bottom: -1px;
 `;
 
 export const ContactPref = styled.div`
