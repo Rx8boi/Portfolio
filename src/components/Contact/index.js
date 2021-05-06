@@ -8,7 +8,7 @@ import {
   ContactLanguagesIcon,
   ContactLanguagesWrapper,
   ContactLanguagesFooter,
-    ContactPref,
+  ContactPref,
   ContactPrefFooter,
   ContactFooter,
 } from "./ContactElements";
@@ -37,7 +37,9 @@ const Contact = () => {
               </ContactLanguagesFooter>
             </ContactLanguages>
             <ContactPref>
-              <h2>Currently Seeking JR Role in:</h2>
+              <h2>Currently Seeking</h2>
+              <br />
+              <h3>Jr. Roles in:</h3>
               <br />
               <hr />
               <br />
@@ -64,10 +66,11 @@ const Contact = () => {
           </ContactInfo>
           <ContactFooter>
             <h2>
-              Feel free to reach out through LinkedIn{" "}
+              Reach out through LinkedIn{" "}
               <a href="https://www.linkedin.com/in/charlesbutlerjr">
                 <FaLinkedin />
-              </a> or email
+              </a>{" "}
+              or email{" "}
               <a href="mailto:cdbutle@outlook.com">
                 <BiMailSend />
               </a>

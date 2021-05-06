@@ -60,7 +60,12 @@ export const ProjectsCard = styled.div`
 
   @media screen and (max-width: 600px) {
     max-height: 80%;
-  };
+    border-radius: 0px;
+    box-shadow: none;
+    transition: none;
+    color: black;
+    background-color: none;
+  } ;
 `;
 
 
