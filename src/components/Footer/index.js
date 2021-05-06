@@ -107,7 +107,7 @@ const Footer = () => {
           <SocialMediaWrap>
             <SocialLogo to="/">gitCharles.com</SocialLogo>
             <WebsiteRights> 
-              © {new Date().getFullYear()} All rights reserved. v1.2
+              © {new Date().getFullYear()} All rights reserved. v2.2
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink
