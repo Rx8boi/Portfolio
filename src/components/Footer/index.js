@@ -127,7 +127,7 @@ const Footer = () => {
               </SocialIconLink>
 
               <SocialIconLink
-                href="//www.twitter.com"
+                href="//www.twitter.com/gitcharles_"
                 target="_blank"
                 aria-label="Twitter"
               >
