@@ -29,11 +29,13 @@ export const ContactContainer = styled.div`
   @media screen and (max-width: 375px) {
     height: 189%;
    margin-bottom: 220px;
-   margin-top: 500px;
+   /* margin-top: 500px; */
+   background-color: red;
     }
   @media screen and (max-width: 365px) {
     height: 240%;
    margin-bottom: 220px;
+   
     }
   `;
 
