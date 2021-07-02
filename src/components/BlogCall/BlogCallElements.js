@@ -27,8 +27,8 @@ export const BlogCallContainer = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    height: 2661px;
-    margin-bottom: 10px;
+    height: 4361px;
+    /* margin-bottom: 10px; */
     
   }
 `;
