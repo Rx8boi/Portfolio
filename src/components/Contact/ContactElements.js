@@ -43,6 +43,7 @@ export const ContactWrapper = styled.div`
   margin: 0 auto;
   align-items: center;
   padding: 0 30px;
+  background-color: purple;
 `;
 
 export const ContactHeader = styled.h1`
