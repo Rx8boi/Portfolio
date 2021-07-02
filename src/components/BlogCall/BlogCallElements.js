@@ -15,9 +15,9 @@ export const BlogCallContainer = styled.div`
   justify-content: right;
   align-items: left;
   /* background-color: #010606; change */
-  background-color: black;
+  background-color: red;
   color: white;
-  height: 1500px;
+  height: 1900px;
 
   @media screen and (max-width: 1000px) {
     height: 1900px;
