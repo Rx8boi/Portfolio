@@ -23,13 +23,13 @@ export const BlogCallContainer = styled.div`
     height: 1900px;
   }
   @media screen and (max-width: 768px) {
-    height: 4300px;
+    height: 4750px;
   }
 
   @media screen and (max-width: 480px) {
-    height: 4361px;
+    height: 4781px;
     /* margin-bottom: 10px; */
-    
+    background-color: pink;
   }
 `;
 

@@ -30,7 +30,7 @@ export const ContactContainer = styled.div`
     height: 189%;
    margin-bottom: 220px;
    /* margin-top: 500px; */
-   background-color: red;
+   /* background-color: red; */
     }
   @media screen and (max-width: 365px) {
     height: 240%;
@@ -45,7 +45,7 @@ export const ContactWrapper = styled.div`
   margin: 0 auto;
   align-items: center;
   padding: 0 30px;
-  background-color: purple;
+  /* background-color: purple; */
 `;
 
 export const ContactHeader = styled.h1`
